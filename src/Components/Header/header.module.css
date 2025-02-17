@@ -1,0 +1,314 @@
+.container{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    font-family: "Quicksand", serif;
+
+}
+
+.logo{
+
+    height: 50px;
+
+}
+
+.logo img{
+
+    height: 100%;
+
+}
+
+.burger_cont{
+
+    position: relative;
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--light-black-color);
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+    display: none;
+
+}
+
+.burger{
+
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: var(--white-color);
+    transition: 0.3s;
+
+}
+
+.burger_1{
+
+    top: 10px;
+    left: 10px;
+
+}
+
+.burger_2{
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.burger_3{
+
+    bottom: 10px;
+    left: 10px;
+
+}
+
+.change {
+
+    rotate: 180deg;
+
+}
+
+.change .burger_1 {
+
+    width: 35.74px;
+    top: 17.26px;
+    left: 7.27px;
+    rotate: -45deg;
+
+}
+
+.change .burger_2 {
+
+    opacity: 0;
+    left: -100%;
+
+}
+
+.change .burger_3 {
+
+    width: 35.74px;
+    top: 17.26px;
+    left: 7.27px;
+    rotate: 45deg;
+
+}
+
+.nav{
+
+    padding: 10px;
+    font-family: "Quicksand", serif;
+    border-radius: 10px;;
+    background-color: var(--light-black-color);
+
+}
+
+.nav ul{
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.nav li a{
+
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white-color);
+    border-radius: 10px;;
+    transition: 0.3s;
+
+    &:hover{
+
+        background-color: var(--dark-gray-color);
+        color: var(--light-green-color);
+
+    }
+
+}
+
+.nav li a svg{
+
+    font-size: 1.25rem;
+
+}
+
+.language_on_nave {
+
+    display: none;
+
+}
+
+.nav_btn {
+
+    width: 100%;
+    padding: 20px 4.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 1.rem;
+    color: var(--white-color);
+    border: none;
+    border-radius: 10px;
+    background-color: var(--light-black-color);
+    transition: 0.3s;
+
+}
+
+.btn_l_side {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.btn_l_side{
+
+    font-size: 1.25rem;
+
+}
+
+.btn_l_side p {
+
+    font-size: 1.15rem;
+    font-weight: 500;
+
+}
+
+.arrowList {
+
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: var(--white-color);
+
+}
+
+.link_det {
+
+    padding: 10px;
+    gap: 0 !important;
+    border-radius: 10px;
+    background-color: var(--light-black-color);
+    overflow: hidden;
+
+}
+
+.link_det li {
+
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start !important;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white-color);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.link_det li img {
+
+    width: 25px;
+
+}
+
+.active_lang {
+
+    color: var(--light-green-color) !important;
+    background-color: var(--dark-gray-color);
+
+}
+
+/* ====== responsive-style ====== */
+
+@media only screen and (max-width: 950px){
+
+    .burger_cont{
+
+        display: block;
+
+    }
+
+    .tr_cont{
+
+        display: none;
+
+    }
+
+    .nav{
+
+        position: fixed;
+        padding: 20px 4.5%;
+        left: 0;
+        /* top: 89px; */
+        top: 79px;
+        width: 100%;
+        height: calc(100vh - 90px);
+        border-radius: 0;
+        border-top: 1px solid var(--light-black-color);
+        background-color: var(--black-color);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+
+    }
+
+    .display_nav{
+
+        top: 89px;
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    .nav ul{
+
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        overflow: auto;
+
+    }
+
+    
+
+    .nav li,.nav li a{
+
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .nav li a{
+
+        padding: 20px;
+
+    }
+
+    .language_on_nave {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+}

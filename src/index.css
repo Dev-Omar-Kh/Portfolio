@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+
+    --black-color: #080B10;
+    --light-black-color: #222327;
+
+    --gray-color: #4C4D51;
+    --dark-gray-color: #38393D;
+
+    --light-green-color: #4EFEC9;
+
+    --vanilla-color: #D9DF99;
+
+    --white-color: #FBFCFD;
+
+}
+
+html[lang="ar"] *,
+html[lang="ar"] {
+
+    font-family: "Vazirmatn", serif !important;
+
+}
+
+body{
+
+    width: 100%;
+    padding: 20px 4.5%;
+    background-color: var(--black-color);
+
+}
+
+::-webkit-scrollbar {
+
+    width: 5px;
+    background-color: var(--black-color);
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background-color: var(--light-black-color);
+
+}
+
+ul{
+
+    list-style: none;
+
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+.nav_link.active{
+
+    background-color: var(--dark-gray-color) !important;
+    color: var(--light-green-color) !important;
+
+}
