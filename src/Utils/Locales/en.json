@@ -7,6 +7,20 @@
 
     "languageWord": "Language",
     "englishWord": "English",
-    "arabicWord": "Arabic"
+    "arabicWord": "Arabic",
+
+    "aboutTitle": "About Me",
+
+    "gitHubWord": "GitHub",
+    "downloadCvWord": "Download CV",
+
+    "myName": "Omar Khaled Mohamed",
+
+    "roleWord": "Role",
+    "roleContent": "Front-End Developer",
+
+    "phoneWord": "Phone Number",
+    
+    "emailWord": "Email Address"
 
 }

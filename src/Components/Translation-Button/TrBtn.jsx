@@ -95,7 +95,7 @@ export default function TrBtn() {
                         <span>{t('arabicWord')}</span>
                     </li>
                     <li className={i18n.language === 'en' ? trBtnCSS.tr_list_li_active : ''} onClick={() => changeLanguage('en')}>
-                        <Flag code="us" />
+                        <Flag code="gb" />
                         <span>{t('englishWord')}</span>
                     </li>
 

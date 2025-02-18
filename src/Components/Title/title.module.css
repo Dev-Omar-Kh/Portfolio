@@ -1,0 +1,29 @@
+.container{
+
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.container .line{
+
+    display: inline-block;
+    width: 7.5px;
+    border-radius: 20px;
+    background-color: var(--light-green-color);
+
+}
+
+.container h3{
+
+    padding: 2.5px 0px;
+    font-size: 1.75rem;
+    font-weight: 700;
+    /* letter-spacing: 1.5px; */
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-family: "Quicksand", serif;
+
+}

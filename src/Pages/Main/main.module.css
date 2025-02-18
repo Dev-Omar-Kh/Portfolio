@@ -1,0 +1,223 @@
+.container{
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.title_cont{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+}
+
+.main_btns{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.main_btns a{
+
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Inter", serif;
+    border-radius: 10px;
+
+}
+
+.main_btns a svg{
+
+    font-size: 1.5rem;
+
+}
+
+.git_hub_link{
+
+    color: var(--white-color);
+    background-color: var(--dark-gray-color);
+
+}
+
+.cv_link{
+
+    color: var(--black-color);
+    background-color: var(--light-green-color);
+
+}
+
+.my_info{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.my_img{
+
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.my_img img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+
+.my_data{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.my_name{
+
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--white-color);
+    font-family: "Quicksand", serif;
+
+}
+
+.my_main_info{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.info_card{
+
+    width: fit-content;
+    min-width: calc((100% / 3) -  (25px - (25px / 3)));
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* background-color: rgba(0, 255, 255, 0.268); */
+
+}
+
+.info_card h4{
+
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--white-color);
+    font-family: "Inter", serif;
+    opacity: 0.75;
+
+}
+
+.info_card p{
+
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--white-color);
+    font-family: "Manrope", serif;
+
+}
+
+/* ====== responsive-style ====== */
+
+@media only screen and (max-width: 1010px) {
+
+    .info_card{
+
+        min-width: fit-content;
+
+    }
+
+}
+
+@media only screen and (max-width: 870px){
+
+    .my_info{
+
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+}
+
+@media only screen and (max-width: 670px){
+
+    .main_btns{
+
+        width: 100%;
+
+    }
+
+    .main_btns a{
+
+        padding: 10px;
+
+    }
+
+    .git_hub_link{
+
+        width: 40%;
+
+    }
+
+    .cv_link{
+
+        width: calc(60% - 10px);
+
+    }
+
+    .info_card{
+
+        min-width: calc(50% - 12.5px);
+
+    }
+
+}
+
+@media only screen and (max-width: 430px){
+
+    .my_info{
+
+        align-items: center;
+
+    }
+
+    .my_name{
+
+        text-align: center;
+
+    }
+
+    .info_card{
+
+        min-width: 100%;
+
+    }
+
+}

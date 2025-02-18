@@ -7,6 +7,20 @@
 
     "languageWord": "اللغة",
     "englishWord": "الإنجليزية",
-    "arabicWord": "العربية"
+    "arabicWord": "العربية",
+
+    "aboutTitle": "معلومات عني",
+
+    "gitHubWord": "جيت هاب",
+    "downloadCvWord": "السيرة الذاتية",
+
+    "myName": "عمر خالد محمد",
+
+    "roleWord": "الوظيفة",
+    "roleContent": "مطور واجهات أمامية",
+
+    "phoneWord": "رقم الهاتف",
+
+    "emailWord": "البريد الإلكتروني"
 
 }
