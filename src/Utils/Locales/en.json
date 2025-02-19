@@ -21,6 +21,10 @@
 
     "phoneWord": "Phone Number",
     
-    "emailWord": "Email Address"
+    "emailWord": "Email Address",
+
+        "achieveCardTitle1": "Total Clients",
+        "achieveCardTitle2": "Total Projects",
+        "achieveCardTitle3": "Years of experience"
 
 }

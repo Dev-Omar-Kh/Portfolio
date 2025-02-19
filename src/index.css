@@ -36,8 +36,6 @@ html[lang="ar"] {
 body{
 
     width: 100%;
-    padding: 0 2.25%;
-    padding-bottom: 50px !important;
     background-color: var(--black-color);
 
 }
@@ -76,8 +74,8 @@ a{
 
 .parents_cont{
 
-    width: 100%;
-    margin-top: 50px;
+    width: calc(100% - 4.5%);
+    margin: 50px 2.25%;
     padding: 20px 2.25%;
     border-radius: 10px;
     background-color: var(--light-black-color);
@@ -89,14 +87,10 @@ a{
 
 @media only screen and (max-width: 600px){
 
-    body{
-
-        padding: 0px 10px;
-
-    }
-
     .parents_cont{
 
+        width: calc(100% - 20px);
+        margin: 50px 10px;
         padding: 20px 10px;
 
     }

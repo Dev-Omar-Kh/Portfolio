@@ -21,6 +21,10 @@
 
     "phoneWord": "رقم الهاتف",
 
-    "emailWord": "البريد الإلكتروني"
+    "emailWord": "البريد الإلكتروني",
+
+    "achieveCardTitle1": "إجمالي العملاء",
+    "achieveCardTitle2": "إجمالي المشاريع",
+    "achieveCardTitle3": "سنوات الخبرة"
 
 }

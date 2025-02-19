@@ -1,11 +1,13 @@
 import React from 'react';
 import Title from '../../Components/Title/Title';
 import { useTranslation } from 'react-i18next';
-import { BiCloudDownload, BiLogoGithub } from 'react-icons/bi';
+import { BiCategory, BiCloudDownload, BiLogoGithub } from 'react-icons/bi';
 
 import mainCSS from './main.module.css';
 
 import myImg from '../../assets/Images/my_img.jpg';
+import { FiUsers } from 'react-icons/fi';
+import { VscTools } from 'react-icons/vsc';
 
 export default function Main() {
 
@@ -20,6 +22,33 @@ export default function Main() {
         {id:3, title: t('emailWord'), content: "devomar.2004@gmail.com"},
 
     ];
+
+    // ====== achievement-data ====== //
+
+    const achievementData = [
+
+        {
+            id:1,
+            icon: <FiUsers />,
+            title: t('achieveCardTitle1'),
+            num: 8,
+        },
+
+        {
+            id:2,
+            icon: <BiCategory />,
+            title: t('achieveCardTitle2'),
+            num: 25,
+        },
+
+        {
+            id:3,
+            icon: <VscTools />,
+            title: t('achieveCardTitle3'),
+            num: 2,
+        },
+
+    ]
 
     return <React.Fragment>
 
@@ -74,6 +103,24 @@ export default function Main() {
                     </div>
 
                 </div>
+
+            </div>
+
+            <div className={mainCSS.achievements}>
+
+                {achievementData.map(card => <div key={card.id} className={mainCSS.achieve_card}>
+
+                    <div className={mainCSS.achieve_icon_side}>
+                        {card.icon}
+                    </div>
+
+                    <div className={mainCSS.achieve_content_side}>
+                        { i18n.language === 'en' && <h3>+{card.num < 10 ? `0${card.num}` : card.num}</h3>}
+                        {i18n.language === 'ar' && <h3>{card.num < 10 ? `0${card.num}` : card.num}+</h3>}
+                        <p>{card.title}</p>
+                    </div>
+
+                </div>)}
 
             </div>
 
