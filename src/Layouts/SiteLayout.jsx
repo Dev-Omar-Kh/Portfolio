@@ -8,7 +8,9 @@ export default function SiteLayout() {
 
         <Header />
 
-        <Outlet />
+        <main>
+            <Outlet />
+        </main>
 
     </React.Fragment>
 

@@ -23,8 +23,10 @@
     
     "emailWord": "Email Address",
 
-        "achieveCardTitle1": "Total Clients",
-        "achieveCardTitle2": "Total Projects",
-        "achieveCardTitle3": "Years of experience"
+    "achieveCardTitle1": "Total Clients",
+    "achieveCardTitle2": "Total Projects",
+    "achieveCardTitle3": "Years of experience",
+
+    "techTitle": "Technologies & Tools"
 
 }

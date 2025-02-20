@@ -48,11 +48,11 @@ export default function Main() {
             num: 2,
         },
 
-    ]
+    ];
 
     return <React.Fragment>
 
-        <main className={`parents_cont ${mainCSS.container}`}>
+        <section className={`parents_cont comm_container`}>
 
             <div className={mainCSS.title_cont}>
 
@@ -124,7 +124,7 @@ export default function Main() {
 
             </div>
 
-        </main>
+        </section>
 
     </React.Fragment>
 

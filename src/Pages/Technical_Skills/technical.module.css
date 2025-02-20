@@ -1,0 +1,106 @@
+.cards_cont{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+
+.tech_card{
+
+    width: calc(25% - (15px - (15px /4)));
+    height: 65px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    background-color: var(--dark-gray-color);
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s;
+
+    &:hover{
+
+        padding: 0;
+
+    }
+
+}
+
+.t_img{
+
+    height: 45px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: var(--gray-color);
+
+}
+
+.tech_card:hover .t_img{
+
+    height: 65px;
+    border-radius: 0px;
+
+}
+
+.t_img img{
+
+    height: 100%;
+
+}
+
+
+
+.card_p{
+
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--white-color);
+    font-family: "Inter", serif;
+    transition: 0.3s;
+
+}
+
+.tech_card:hover .card_p{
+
+    color: var(--light-green-color);
+
+}
+
+/* ====== responsive-style ====== */
+
+@media only screen and (max-width: 1050px){
+
+    .tech_card{
+
+        width: calc((100% / 3) - (15px - (15px / 3)));
+
+    }
+
+}
+
+@media only screen and (max-width: 780px){
+
+    .tech_card{
+
+        width: calc(50% - 7.5px);
+
+    }
+
+}
+
+@media only screen and (max-width: 475px){
+
+    .tech_card{
+
+        width: 100%;
+
+    }
+
+}
