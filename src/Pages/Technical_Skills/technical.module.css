@@ -31,7 +31,7 @@
 
 .t_img{
 
-    height: 45px;
+    height: calc(100% - 20px);
     padding: 10px;
     display: flex;
     align-items: center;
@@ -44,7 +44,7 @@
 
 .tech_card:hover .t_img{
 
-    height: 65px;
+    height: 100%;
     border-radius: 0px;
 
 }
@@ -54,8 +54,6 @@
     height: 100%;
 
 }
-
-
 
 .card_p{
 
@@ -97,9 +95,30 @@
 
 @media only screen and (max-width: 475px){
 
-    .tech_card{
+    /* .tech_card{
 
         width: 100%;
+
+    } */
+
+    .tech_card{
+
+        height: 50px;
+        padding: 0px 5px;
+        gap: 10px;
+
+    }
+
+    .t_img{
+
+        padding: 5px;
+        height: calc(100% - 10px);
+
+    }
+
+    .card_p{
+
+        font-size: 0.75rem;
 
     }
 
