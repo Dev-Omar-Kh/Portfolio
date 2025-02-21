@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import SiteLayout from './Layouts/SiteLayout';
 import { useTranslation } from 'react-i18next';
-import Page from './Pages/Page';
+import Home from './Pages/Home/Home';
 
 const routes = createBrowserRouter([
 
     {path: '/', element: <SiteLayout />, children: [
 
-        {path: '/', element: <Page />}
+        {path: '/', element: <Home />}
 
     ]},
 

@@ -1,0 +1,139 @@
+.title_actions {
+
+    /* height: 50px; */
+    position: relative;
+    font-family: "Inter", serif;
+    z-index: 0;
+
+}
+
+.time_btn {
+
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--dark-gray-color);
+    cursor: pointer;
+
+}
+
+/* .time_btn p {
+
+    font-size: 1.15rem;
+    color: var(--white-color);
+
+} */
+
+.filter_icon{
+
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--gray-color);
+    transition: 0.3s;
+
+}
+
+.time_btn:hover .filter_icon{
+
+    border-radius: 50%;
+    rotate: 360deg;
+
+}
+
+.time_btn span {
+
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white-color);
+
+}
+
+.time_btn svg {
+
+    font-size: 1.25rem;
+    color: var(--white-color);
+
+}
+
+.times_list {
+
+    position: absolute;
+    left: 0;
+    top: calc(100% + 10px);
+    width: 100%;
+    max-height: 350px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: var(--dark-gray-color);
+    box-shadow: 0px 0px 10px rgba(78, 254, 201, 0.05);
+    overflow: auto;
+
+}
+
+.times_list li {
+
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+
+        color: var(--light-green-color);
+        background-color: var(--gray-color);
+
+    }
+
+}
+
+.chosen_time {
+
+    color: var(--light-green-color) !important;
+    background-color: var(--gray-color) !important;
+
+}
+
+.arrowList {
+
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* ====== responsive-style ====== */
+
+@media only screen and (max-width: 610px) {
+
+    .title_actions {
+
+        width: 100%;
+
+    }
+
+    .time_btn {
+
+        min-width: 100%;
+        justify-content: space-between;
+
+    }
+
+}

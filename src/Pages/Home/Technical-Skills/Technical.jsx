@@ -1,23 +1,25 @@
 import React from 'react';
-import Title from '../../Components/Title/Title';
+import Title from '../../../Components/Title/Title';
 import { useTranslation } from 'react-i18next';
 
 import techCSS from './technical.module.css';
 
-import techImg1 from '../../assets/SVG/html-logo.svg';
-import techImg2 from '../../assets/SVG/css-logo.svg';
-import techImg3 from '../../assets/SVG/js-logo.svg';
-import techImg4 from '../../assets/SVG/jquery-logo.svg';
-import techImg5 from '../../assets/SVG/bootstrap-logo.svg';
-import techImg6 from '../../assets/SVG/tailwindcss-logo.svg';
-import techImg7 from '../../assets/SVG/react-logo.svg';
-import techImg8 from '../../assets/SVG/redux-logo.svg';
-import techImg9 from '../../assets/SVG/node-js-logo.svg';
-import techImg10 from '../../assets/SVG/expressjs-logo.svg';
-import techImg11 from '../../assets/SVG/mongodb-logo.svg';
-import techImg12 from '../../assets/SVG/vscode-logo.svg';
-import techImg13 from '../../assets/SVG/git-logo.svg';
-import techImg14 from '../../assets/SVG/github-logo.svg';
+import techImg1 from '../../../assets/SVG/html-logo.svg';
+import techImg2 from '../../../assets/SVG/css-logo.svg';
+import techImg3 from '../../../assets/SVG/js-logo.svg';
+import techImg4 from '../../../assets/SVG/jquery-logo.svg';
+import techImg5 from '../../../assets/SVG/bootstrap-logo.svg';
+import techImg6 from '../../../assets/SVG/tailwindcss-logo.svg';
+import techImg7 from '../../../assets/SVG/react-logo.svg';
+import techImg8 from '../../../assets/SVG/redux-logo.svg';
+import techImg9 from '../../../assets/SVG/node-js-logo.svg';
+import techImg10 from '../../../assets/SVG/expressjs-logo.svg';
+import techImg11 from '../../../assets/SVG/mongodb-logo.svg';
+import techImg12 from '../../../assets/SVG/vscode-logo.svg';
+import techImg13 from '../../../assets/SVG/git-logo.svg';
+import techImg14 from '../../../assets/SVG/github-logo.svg';
+import techImg15 from '../../../assets/SVG/vitelogo.svg';
+import techImg16 from '../../../assets/SVG/chrome-logo.svg';
 
 export default function Technical() {
 
@@ -30,85 +32,97 @@ export default function Technical() {
         {
             id: 1,
             img: techImg1,
-            title: 'HTML'
+            title: t('techDataTitle1')
         },
 
         {
             id: 2,
             img: techImg2,
-            title: 'CSS'
+            title: t('techDataTitle2')
         },
 
         {
             id: 3,
             img: techImg3,
-            title: 'Java Script'
+            title: t('techDataTitle3')
         },
 
         {
             id: 4,
             img: techImg4,
-            title: 'Jquery'
+            title: t('techDataTitle4')
         },
 
         {
             id: 5,
             img: techImg5,
-            title: 'Bootstrap'
+            title: t('techDataTitle5')
         },
 
         {
             id: 6,
             img: techImg6,
-            title: 'Tailwind'
+            title: t('techDataTitle6')
         },
 
         {
             id: 7,
             img: techImg7,
-            title: 'React'
+            title: t('techDataTitle7')
         },
 
         {
             id: 8,
             img: techImg8,
-            title: 'Redux'
+            title: t('techDataTitle8')
         },
 
         {
             id: 9,
             img: techImg9,
-            title: 'Node Js'
+            title: t('techDataTitle9')
         },
 
         {
             id: 10,
             img: techImg10,
-            title: 'Express Js'
+            title: t('techDataTitle10')
         },
 
         {
             id: 11,
             img: techImg11,
-            title: 'Mongo DB'
+            title: t('techDataTitle11')
         },
 
         {
             id: 12,
             img: techImg12,
-            title: 'VS Code'
+            title: t('techDataTitle12')
         },
 
         {
             id: 13,
             img: techImg13,
-            title: 'Git'
+            title: t('techDataTitle13')
         },
 
         {
             id: 14,
             img: techImg14,
-            title: 'GitHub'
+            title: t('techDataTitle14')
+        },
+
+        {
+            id: 15,
+            img: techImg15,
+            title: t('techDataTitle15')
+        },
+
+        {
+            id: 16,
+            img: techImg16,
+            title: t('techDataTitle16')
         },
 
     ]

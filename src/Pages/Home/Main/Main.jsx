@@ -1,13 +1,13 @@
 import React from 'react';
-import Title from '../../Components/Title/Title';
+import Title from '../../../Components/Title/Title';
 import { useTranslation } from 'react-i18next';
 import { BiCategory, BiCloudDownload, BiLogoGithub } from 'react-icons/bi';
+import { FiUsers } from 'react-icons/fi';
+import { VscTools } from 'react-icons/vsc';
 
 import mainCSS from './main.module.css';
 
-import myImg from '../../assets/Images/my_img.jpg';
-import { FiUsers } from 'react-icons/fi';
-import { VscTools } from 'react-icons/vsc';
+import myImg from '../../../assets/Images/my_img.jpg';
 
 export default function Main() {
 

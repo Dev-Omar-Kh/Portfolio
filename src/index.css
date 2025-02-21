@@ -37,6 +37,7 @@ body{
 
     width: 100%;
     background-color: var(--black-color);
+    overflow-x: hidden;
 
 }
 

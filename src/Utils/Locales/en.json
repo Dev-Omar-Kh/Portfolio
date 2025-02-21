@@ -27,6 +27,25 @@
     "achieveCardTitle2": "Total Projects",
     "achieveCardTitle3": "Years of experience",
 
-    "techTitle": "Technologies & Tools"
+    "techTitle": "Technologies & Tools",
+
+    "techDataTitle1": "HTML",
+    "techDataTitle2": "CSS",
+    "techDataTitle3": "Java Script",
+    "techDataTitle4": "Jquery",
+    "techDataTitle5": "Bootstrap",
+    "techDataTitle6": "Tailwind",
+    "techDataTitle7": "React Js",
+    "techDataTitle8": "Redux JS",
+    "techDataTitle9": "Node Js",
+    "techDataTitle10": "Express Js",
+    "techDataTitle11": "Mongo DB",
+    "techDataTitle12": "VS Code",
+    "techDataTitle13": "Git",
+    "techDataTitle14": "GitHub",
+    "techDataTitle15": "Vite",
+    "techDataTitle16": "Chrome",
+
+    "projectsTitle": "My Projects"
 
 }

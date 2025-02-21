@@ -27,6 +27,25 @@
     "achieveCardTitle2": "إجمالي المشاريع",
     "achieveCardTitle3": "سنوات الخبرة",
 
-    "techTitle": "التقنيات و الأدوات"
+    "techTitle": "التقنيات و الأدوات",
+
+    "techDataTitle1": "إتش تي إم إل",
+    "techDataTitle2": "سي إس إس",
+    "techDataTitle3": "جافا سكريبت",
+    "techDataTitle4": "جي كويري",
+    "techDataTitle5": "بوتستراب",
+    "techDataTitle6": "تايلويند",
+    "techDataTitle7": "ريآكت جي إس",
+    "techDataTitle8": "ريدوكس جي إس",
+    "techDataTitle9": "نود جي إس",
+    "techDataTitle10": "إكسبريس جي إس",
+    "techDataTitle11": "مونجو دي بي",
+    "techDataTitle12": "في إس كود",
+    "techDataTitle13": "جيت",
+    "techDataTitle14": "جيت هاب",
+    "techDataTitle15": "فيت",
+    "techDataTitle16": "كروم",
+
+    "projectsTitle": "مشاريعي"
 
 }
