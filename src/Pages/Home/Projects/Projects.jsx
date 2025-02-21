@@ -26,7 +26,7 @@ export default function Projects() {
 
             <div className={projectsCSS.projects_cont}>
 
-                {projectsData.map(card => <Card key={card.id} data={card} />)}
+                {projectsData.slice().reverse().map(card => <Card key={card.id} data={card} />)}
 
             </div>
 
