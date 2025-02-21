@@ -46,6 +46,24 @@
     "techDataTitle15": "Vite",
     "techDataTitle16": "Chrome",
 
-    "projectsTitle": "My Projects"
+    "projectsTitle": "My Projects",
+
+    "projectName1": "Portfolio",
+    "projectName2": "Gallery",
+    "projectName3": "CRUDS System",
+    "projectName4": "Tic Tac Toe",
+    "projectName5": "Online Courses",
+    "projectName6": "Age Calculator",
+    "projectName7": "Advice App",
+    "projectName8": "Movies App",
+    "projectName9": "Shop",
+    "projectName10": "Restaurant",
+    "projectName11": "Lilac Dashboard",
+    "projectName12": "Book Store",
+    "projectName13": "Coding Developer Site",
+    "projectName14": "Products System",
+    "projectName15": "Sanfour",
+    "projectName16": "Watfa Dashboard",
+    "projectName17": "Watfa Site"
 
 }

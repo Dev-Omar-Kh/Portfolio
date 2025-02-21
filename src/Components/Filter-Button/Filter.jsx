@@ -34,12 +34,12 @@ export default function Filter() {
     // ====== users-type-data ====== //
 
     // const data = proData
-    const productsType = [...new Set(proData.flatMap(product => product.tool))];
+    const productsType = ["All Projects", ...new Set(proData.flatMap(product => product.tool))];
 
 
     // ====== chose-filters ====== //
 
-    const [chosenType, setChosenType] = useState('All Projects');
+    const [chosenType, setChosenType] = useState(productsType[0]);
 
 
     const chooseUsersStatus = (chosenStatus) => {
@@ -82,27 +82,24 @@ export default function Filter() {
 
                 {displayFilteredUsers && 
 
-                    <motion.ul
+                    <motion.div 
                         key={'times-list'}
-                        className={filterCSS.times_list}
+                        className={filterCSS.ul_cont} 
                         variants={listAnimation} initial='hidden' animate='visible' exit={'exit'}
                     >
 
-                        <li 
-                            className={chosenType === 'All Projects' ? filterCSS.chosen_time : ''}
-                            onClick={() => chooseUsersStatus('All Projects')}
-                        >
-                            All Projects
-                        </li>
+                        <ul className={filterCSS.times_list}>
 
-                        {productsType.map((type, idx) => <li 
-                            className={chosenType === type ? filterCSS.chosen_time : ''} key={idx}
-                            onClick={() => chooseUsersStatus(type)}
-                        >
-                            {type}
-                        </li>)}
+                            {productsType.map((type, idx) => <li 
+                                className={chosenType === type ? filterCSS.chosen_time : ''} key={idx}
+                                onClick={() => chooseUsersStatus(type)}
+                            >
+                                {type}
+                            </li>)}
 
-                    </motion.ul>
+                        </ul>
+
+                    </motion.div>
 
                 }
 

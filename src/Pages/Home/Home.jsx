@@ -11,7 +11,7 @@ export default function Home() {
 
         <Technical />
 
-        {/* <Projects /> */}
+        <Projects />
 
     </React.Fragment>
 

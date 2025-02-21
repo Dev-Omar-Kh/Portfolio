@@ -4,6 +4,9 @@ import projectsCSS from './projects.module.css';
 import { useTranslation } from 'react-i18next';
 import Title from '../../../Components/Title/Title';
 import Filter from '../../../Components/Filter-Button/Filter';
+import Card from '../../../Components/Card/Card';
+
+import projectsData from '../../../assets/Data/Projects.json';
 
 export default function Projects() {
 
@@ -18,6 +21,12 @@ export default function Projects() {
                 <Title title={t('projectsTitle')} />
 
                 <Filter />
+
+            </div>
+
+            <div className={projectsCSS.projects_cont}>
+
+                {projectsData.map(card => <Card key={card.id} data={card} />)}
 
             </div>
 
