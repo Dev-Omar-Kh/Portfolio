@@ -77,3 +77,15 @@
     pointer-events: none;
 
 }
+
+/* ====== responsive-style ====== */
+
+@media only screen and (max-width: 425px){
+
+    .more_btn_cont button{
+
+        width: 100%;
+
+    }
+
+}
