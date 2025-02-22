@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function Card({data}) {
 
-    const {t} = useTranslation();
+    const {t, i18n} = useTranslation();
 
     return <React.Fragment>
 
@@ -29,7 +29,7 @@ export default function Card({data}) {
                     <div className={cardCSS.pro_tools_cont}>
 
                         {data.tool.map((tool, idx) => <div key={idx} className={cardCSS.tool_box}>
-                            {tool}
+                            {t(tool)}
                         </div>)}
 
                     </div>
@@ -37,7 +37,7 @@ export default function Card({data}) {
                 </div>
 
                 <button className={cardCSS.pro_link}>
-                    <FiArrowUpRight />
+                    <FiArrowUpRight style={i18n.language === 'ar' ? {rotate: '-90deg'} : {}} />
                 </button>
 
             </div>

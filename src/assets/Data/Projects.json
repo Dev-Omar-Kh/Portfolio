@@ -4,119 +4,119 @@
         "id": 1,
         "name": "projectName1",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169348/portfolio_dfy0aq.png",
-        "tool": ["HTML", "CSS"]
+        "tool": ["techDataTitle1", "techDataTitle2"]
     },
 
     {
         "id": 2,
         "name": "projectName2",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169347/gallery_j6qslj.png",
-        "tool": ["HTML", "CSS", "Java Script"]
+        "tool": ["techDataTitle1", "techDataTitle2", "techDataTitle3"]
     },
 
     {
         "id": 3,
         "name": "projectName3",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169339/cruds-system_joap1o.png",
-        "tool": ["HTML", "CSS", "Java Script"]
+        "tool": ["techDataTitle1", "techDataTitle2", "techDataTitle3"]
     },
 
     {
         "id": 4,
         "name": "projectName4",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169353/tic-tac-toe_e7v31e.png",
-        "tool": ["HTML", "CSS", "Java Script", "Jquery"]
+        "tool": ["techDataTitle1", "techDataTitle2", "techDataTitle3", "techDataTitle4"]
     },
 
     {
         "id": 5,
         "name": "projectName5",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169347/online-courses_tatnyp.png",
-        "tool": ["HTML", "CSS", "Java Script", "Jquery"]
+        "tool": ["techDataTitle1", "techDataTitle2", "techDataTitle3", "techDataTitle4"]
     },
 
     {
         "id": 6,
         "name": "projectName6",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169338/age-calculator_gmzek3.png",
-        "tool": ["React Js", "CSS", "Framer Motion"]
+        "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17"]
     },
 
     {
         "id": 7,
         "name": "projectName7",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169333/advice-app_plmsun.png",
-        "tool": ["React Js", "CSS", "Framer Motion"]
+        "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17"]
     },
 
     {
         "id": 8,
         "name": "projectName8",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169346/movies-app_k35dgw.png",
-        "tool": ["React Js", "CSS", "API"]
+        "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle18"]
     },
 
     {
         "id": 9,
         "name": "projectName9",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169360/shop-site_z0ocgu.png",
-        "tool": ["React Js", "CSS", "API"]
+        "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle18"]
     },
 
     {
         "id": 10,
         "name": "projectName10",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169341/restaurant-app_h0ofnb.png",
-        "tool": ["React Js", "CSS", "Framer Motion", "API"]
+        "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17", "techDataTitle18"]
     },
 
     {
         "id": 11,
         "name": "projectName11",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169347/lilac-dashboard_efu3vk.png",
-        "tool": ["React Js", "CSS", "Redux Js", "API"]
+        "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle8", "techDataTitle18"]
     },
 
     {
         "id": 12,
         "name": "projectName12",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169342/book-store_j0roal.png",
-        "tool": ["React Js", "CSS", "Framer Motion", "Redux Js", "API", "Node Js", "Express Js", "JWT", "Mongo DB"]
+        "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17", "techDataTitle8", "techDataTitle18", "techDataTitle9", "techDataTitle10", "techDataTitle19", "techDataTitle11"]
     },
 
     {
         "id": 13,
         "name": "projectName13",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169339/coding-dev-site_rhbd9o.png",
-        "tool": ["React Js", "CSS", "Framer Motion"]
+        "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17"]
     },
 
     {
         "id": 14,
         "name": "projectName14",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169356/products-system_hpil25.png",
-        "tool": ["React Js", "CSS", "Framer Motion"]
+        "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17"]
     },
 
     {
         "id": 15,
         "name": "projectName15",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169359/sanfour-site_z3hepf.png",
-        "tool": ["React Js", "CSS", "Framer Motion", "API"]
+        "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17", "techDataTitle18"]
     },
 
     {
         "id": 16,
         "name": "projectName16",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169360/watfa-dashboard_pu16xp.png",
-        "tool": ["React Js", "CSS", "Framer Motion", "Chart Js"]
+        "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17", "techDataTitle20"]
     },
 
     {
         "id": 17,
         "name": "projectName17",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169358/watfa-site_txhz4p.png",
-        "tool": ["React Js", "CSS", "Framer Motion"]
+        "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17"]
     }
 
 ]

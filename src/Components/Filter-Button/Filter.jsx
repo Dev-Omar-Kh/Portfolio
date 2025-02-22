@@ -7,8 +7,11 @@ import filterCSS from './filter.module.css';
 
 import proData from '../../assets/Data/Projects.json';
 import { BiFilterAlt } from 'react-icons/bi';
+import { useTranslation } from 'react-i18next';
 
 export default function Filter() {
+
+    const {i18n} = useTranslation();
 
     const [displayFilteredUsers, setDisplayFilteredUsers] = useState(false);
     const ulRef = useRef(null);
@@ -72,8 +75,13 @@ export default function Filter() {
 
                 <span>{chosenType}</span>
 
-                <div style={{rotate: displayFilteredUsers ? '90deg' : '0deg'}} className={filterCSS.arrowList}>
-                    <IoIosArrowForward />
+                <div 
+                    className={filterCSS.arrowList}
+                    style={{
+                        rotate: displayFilteredUsers ? i18n.language === 'en' ? '90deg' : '-90deg' : '0deg'
+                    }} 
+                >
+                    <IoIosArrowForward style={i18n.language === 'ar' ? {rotate: '180deg'} : {}} />
                 </div>
 
             </button>

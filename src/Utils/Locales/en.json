@@ -45,6 +45,10 @@
     "techDataTitle14": "GitHub",
     "techDataTitle15": "Vite",
     "techDataTitle16": "Chrome",
+    "techDataTitle17": "Framer Motion",
+    "techDataTitle18": "API",
+    "techDataTitle19": "JWT",
+    "techDataTitle20": "Chart Js",
 
     "projectsTitle": "My Projects",
 
@@ -64,6 +68,8 @@
     "projectName14": "Products System",
     "projectName15": "Sanfour",
     "projectName16": "Watfa Dashboard",
-    "projectName17": "Watfa Site"
+    "projectName17": "Watfa Site",
+
+    "displayMoreWord": "Display More"
 
 }
