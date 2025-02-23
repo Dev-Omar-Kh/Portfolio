@@ -3,12 +3,14 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import SiteLayout from './Layouts/SiteLayout';
 import { useTranslation } from 'react-i18next';
 import Home from './Pages/Home/Home';
+import Project from './Components/Single-Project/Project';
 
 const routes = createBrowserRouter([
 
     {path: '/', element: <SiteLayout />, children: [
 
-        {path: '/', element: <Home />}
+        {path: '/', element: <Home />},
+        {path: '/project/:id', element: <Project />}
 
     ]},
 

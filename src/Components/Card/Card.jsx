@@ -12,7 +12,7 @@ export default function Card({data}) {
 
     return <React.Fragment>
 
-        <Link className={cardCSS.card}>
+        <Link to={`project/${data.id}`} className={cardCSS.card}>
 
             <div className={cardCSS.img_cont}>
 

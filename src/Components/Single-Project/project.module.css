@@ -1,0 +1,416 @@
+.container{
+
+    width: 100%;
+    padding: 50px 2.25%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.title_cont{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.back_btn{
+
+    padding: 10px 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white-color);
+    font-family: "Inter", serif;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--light-black-color);
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover{
+
+        color: var(--black-color);
+        background-color: var(--light-green-color);
+
+    }
+
+}
+
+.back_btn svg{
+
+    font-size: 1.5rem;
+
+}
+
+.path_cont{
+
+    padding: 10px 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: var(--light-black-color);
+
+}
+
+.path_cont p{
+
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white-color);
+    font-family: "Quicksand", serif;
+
+}
+
+.path_cont a{
+
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white-color);
+    font-family: "Quicksand", serif;
+    opacity: 0.75;
+
+}
+
+.path_cont svg{
+
+    font-size: 1.5rem;
+    color: var(--white-color);
+    opacity: 0.75;
+
+}
+
+.pro_det_cont {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+}
+
+.pro_right_cont, .pro_left_cont{
+
+    width: calc(50% - 12.5px);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.about_pro, .pro_tech, .features_cont{
+
+    width: 100%;
+    padding: 25px 2.25%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 10px;
+    background-color: var(--light-black-color);
+
+}
+
+.about_p{
+
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--white-color);
+    font-family: "Manrope", serif;
+    opacity: 0.75;
+
+}
+
+.links_cont{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.links_cont a {
+
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Inter", serif;
+    border-radius: 10px;
+
+}
+
+.links_cont a svg{
+
+    font-size: 1.5rem;
+
+}
+
+.live_demo_link{
+
+    color: var(--white-color);
+    background-color: var(--dark-gray-color);
+
+}
+
+.git_hub_link{
+
+    color: var(--black-color);
+    background-color: var(--light-green-color);
+
+}
+
+.pro_count{
+
+    width: 100%;
+    padding: 25px 2.25%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    background-color: var(--light-black-color);
+
+}
+
+.count_box{
+
+    width: calc(50% - 12.5px);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    background-color: var(--dark-gray-color);
+    cursor: pointer;
+
+}
+
+.achieve_icon_side {
+
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--gray-color);
+    transition: 0.3s;
+
+}
+
+.achieve_icon_side svg {
+
+    font-size: 1.75rem;
+    color: var(--white-color);
+
+}
+
+.count_box:hover .achieve_icon_side {
+
+    border-radius: 50%;
+    rotate: 360deg;
+
+}
+
+.achieve_content_side {
+
+    width: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--white-color);
+
+}
+
+.achieve_content_side h3 {
+
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Manrope", serif;
+    transition: 0.3s;
+
+}
+
+.achieve_content_side p {
+
+    font-size: 1.25rem;
+    font-family: "Inter", serif;
+    opacity: 0.75;
+    transition: 0.3s;
+
+}
+
+.count_box:hover .achieve_content_side h3 {
+
+    color: var(--light-green-color);
+
+}
+
+.count_box:hover .achieve_content_side p {
+
+    opacity: 1;
+
+}
+
+.tech_title_cont{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.tech_title_cont svg{
+
+    font-size: 2rem;
+    color: var(--light-green-color);
+
+}
+
+.tech_title_cont h3{
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white-color);
+    font-family: "Quicksand", serif;
+
+}
+
+.tech_cont{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.tool_box{
+
+    padding: 10px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--white-color);
+    white-space: nowrap;
+    font-family: "Inter", serif;
+    border-radius: 10px;
+    background-color: var(--gray-color);
+
+}
+
+.img_cont{
+
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--dark-gray-color);
+
+}
+
+.img_cont img{
+
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    pointer-events: none;
+
+}
+
+.features_list{
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.features_list li{
+
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: var(--dark-gray-color);
+
+}
+
+.features_list li svg{
+
+    font-size: 1.25em;
+    color: var(--light-green-color);
+
+}
+
+.features_list li p{
+
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white-color);
+    font-family: "Manrope", serif;
+
+}
+
+/* ====== responsive-style ====== */
+
+@media only screen and (max-width: 1150px) and (min-width: 835px){
+
+    .count_box{
+
+        width: 100%;
+
+    }
+
+}
+
+@media only screen and (max-width: 835px){
+
+    .pro_right_cont, .pro_left_cont{
+
+        width: 100%;
+
+    }
+
+}
+
+@media only screen and (max-width: 560px){
+
+    .count_box{
+
+        width: 100%;
+
+    }
+
+    .back_btn, .path_cont{
+
+        height: fit-content;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .path_cont a{
+
+        white-space: nowrap;
+
+    }
+
+}

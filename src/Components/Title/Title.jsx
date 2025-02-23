@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import titleCSS from './title.module.css';
 import { useTranslation } from 'react-i18next';
 
-export default function Title({title}) {
+export default function Title({title, cap}) {
 
     const {i18n} = useTranslation();
 
@@ -34,7 +34,7 @@ export default function Title({title}) {
 
             <span style={{height: lineHeight}} className={titleCSS.line}></span>
 
-            <h3 ref={titleRef}>{title}</h3>
+            <h3 ref={titleRef} style={{textTransform: cap ? 'capitalize' : 'uppercase'}}>{title}</h3>
 
         </div>
 
@@ -44,4 +44,5 @@ export default function Title({title}) {
 
 Title.propTypes = {
     title: PropTypes.string.isRequired,
+    cap: PropTypes.bool
 };

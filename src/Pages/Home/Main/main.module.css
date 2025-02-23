@@ -198,7 +198,7 @@
     width: calc(100% - 100px);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     color: var(--white-color);
 
 }

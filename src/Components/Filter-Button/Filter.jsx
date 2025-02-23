@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function Filter() {
 
-    const {i18n} = useTranslation();
+    const {t, i18n} = useTranslation();
 
     const [displayFilteredUsers, setDisplayFilteredUsers] = useState(false);
     const ulRef = useRef(null);
@@ -73,7 +73,7 @@ export default function Filter() {
                     <BiFilterAlt />
                 </div>
 
-                <span>{chosenType}</span>
+                <span>{t(chosenType)}</span>
 
                 <div 
                     className={filterCSS.arrowList}
@@ -102,7 +102,7 @@ export default function Filter() {
                                 className={chosenType === type ? filterCSS.chosen_time : ''} key={idx}
                                 onClick={() => chooseUsersStatus(type)}
                             >
-                                {type}
+                                {t(type)}
                             </li>)}
 
                         </ul>
