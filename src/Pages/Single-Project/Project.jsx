@@ -5,10 +5,10 @@ import projectsData from '../../assets/Data/Projects.json';
 import projectCSS from './project.module.css';
 import { useTranslation } from 'react-i18next';
 import { IoIosArrowForward, IoMdArrowRoundBack } from 'react-icons/io';
-import Title from '../Title/Title';
 import { BiCodeAlt, BiLayer, BiLogoGithub, BiStar } from 'react-icons/bi';
 import { TbWorldCode } from 'react-icons/tb';
 import { GoDotFill } from 'react-icons/go';
+import Title from '../../Components/Title/Title';
 
 export default function Project() {
 
@@ -83,12 +83,18 @@ export default function Project() {
 
                         <div className={projectCSS.links_cont}>
 
-                            <a className={projectCSS.live_demo_link} href="https://github.com/Dev-Omar-Kh" target='_blank'>
+                            <a 
+                                className={`${projectCSS.live_demo_link} ${!proData.demoLive ? projectCSS.hidden_link : ''}`} 
+                                href={proData.demoLive} target='_blank'
+                            >
                                 <TbWorldCode />
                                 <p>{t('liveDemoWord')}</p>
                             </a>
 
-                            <a className={projectCSS.git_hub_link} href="https://github.com/Dev-Omar-Kh" target='_blank'>
+                            <a 
+                                className={`${projectCSS.git_hub_link} ${!proData.gitHub ? projectCSS.hidden_link : ''}`} 
+                                href={proData.gitHub} target='_blank'
+                            >
                                 <BiLogoGithub />
                                 <p>{t('gitHubWord')}</p>
                             </a>

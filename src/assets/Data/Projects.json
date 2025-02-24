@@ -6,7 +6,9 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169348/portfolio_dfy0aq.png",
         "tool": ["techDataTitle1", "techDataTitle2"],
         "description": "projectDesc1",
-        "features": ["features1n1", "features1n2", "features1n3", "features1n4"]
+        "features": ["features1n1", "features1n2", "features1n3", "features1n4"],
+        "gitHub": "https://github.com/Dev-Omar-Kh/Training-Portfolio",
+        "demoLive": "https://training-portfolio-zeta.vercel.app/"
     },
 
     {
@@ -15,7 +17,9 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169347/gallery_j6qslj.png",
         "tool": ["techDataTitle1", "techDataTitle2", "techDataTitle3"],
         "description": "projectDesc2",
-        "features": ["features2n1", "features2n2", "features2n3", "features2n4"]
+        "features": ["features2n1", "features2n2", "features2n3", "features2n4"],
+        "gitHub": "https://github.com/Dev-Omar-Kh/Gallery-Site",
+        "demoLive": "https://gallery-site-lyart.vercel.app/"
     },
 
     {
@@ -24,7 +28,9 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169339/cruds-system_joap1o.png",
         "tool": ["techDataTitle1", "techDataTitle2", "techDataTitle3"],
         "description": "projectDesc3",
-        "features": ["features3n1", "features3n2", "features3n3", "features3n4"]
+        "features": ["features3n1", "features3n2", "features3n3", "features3n4"],
+        "gitHub": "https://github.com/Dev-Omar-Kh/CRUDS-System",
+        "demoLive": "https://cruds-system-nu.vercel.app/"
     },
 
     {
@@ -33,7 +39,9 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169353/tic-tac-toe_e7v31e.png",
         "tool": ["techDataTitle1", "techDataTitle2", "techDataTitle3", "techDataTitle4"],
         "description": "projectDesc4",
-        "features": ["features4n1", "features4n2", "features4n3", "features4n4", "features4n5", "features4n6"]
+        "features": ["features4n1", "features4n2", "features4n3", "features4n4", "features4n5", "features4n6"],
+        "gitHub": "https://github.com/Dev-Omar-Kh/TIC-TAC-TOE",
+        "demoLive": "https://tic-tac-toe-psi-eight-40.vercel.app/"
     },
 
     {
@@ -42,7 +50,9 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169347/online-courses_tatnyp.png",
         "tool": ["techDataTitle1", "techDataTitle2", "techDataTitle3", "techDataTitle4"],
         "description": "projectDesc5",
-        "features": ["features5n1", "features5n2", "features5n3", "features5n4", "features5n5", "features5n6"]
+        "features": ["features5n1", "features5n2", "features5n3", "features5n4", "features5n5", "features5n6"],
+        "gitHub": "https://github.com/Dev-Omar-Kh/Online-Courses",
+        "demoLive": "https://online-courses-eight.vercel.app/"
     },
 
     {
@@ -51,7 +61,9 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169338/age-calculator_gmzek3.png",
         "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17"],
         "description": "projectDesc6",
-        "features": ["features6n1", "features6n2", "features6n3", "features6n4", "features6n5"]
+        "features": ["features6n1", "features6n2", "features6n3", "features6n4", "features6n5"],
+        "gitHub": "https://github.com/Dev-Omar-Kh/age-calculator",
+        "demoLive": "https://age-calculator-peach-two.vercel.app/"
     },
 
     {
@@ -60,7 +72,9 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169333/advice-app_plmsun.png",
         "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17"],
         "description": "projectDesc7",
-        "features": ["features7n1", "features7n2", "features7n3", "features7n4", "features7n5"]
+        "features": ["features7n1", "features7n2", "features7n3", "features7n4", "features7n5"],
+        "gitHub": "https://github.com/Dev-Omar-Kh/Advice-App",
+        "demoLive": "https://advice-app-five-iota.vercel.app/"
     },
 
     {
@@ -69,7 +83,9 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169346/movies-app_k35dgw.png",
         "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle18"],
         "description": "projectDesc8",
-        "features": ["features8n1", "features8n2", "features8n3", "features8n4", "features8n5"]
+        "features": ["features8n1", "features8n2", "features8n3", "features8n4", "features8n5"],
+        "gitHub": "https://github.com/Dev-Omar-Kh/Trending-App",
+        "demoLive": "https://trending-app-delta.vercel.app/"
     },
 
     {
@@ -78,7 +94,9 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169360/shop-site_z0ocgu.png",
         "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle18"],
         "description": "projectDesc9",
-        "features": ["features9n1", "features9n2", "features9n3", "features9n4", "features9n5", "features9n6", "features9n7"]
+        "features": ["features9n1", "features9n2", "features9n3", "features9n4", "features9n5", "features9n6", "features9n7"],
+        "gitHub": "https://github.com/Dev-Omar-Kh/Shop-Site",
+        "demoLive": "https://shop-site-rouge.vercel.app/"
     },
 
     {
@@ -87,7 +105,9 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169341/restaurant-app_h0ofnb.png",
         "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17", "techDataTitle18"],
         "description": "projectDesc10",
-        "features": ["features10n1", "features10n2", "features10n3", "features10n4", "features10n5", "features10n6", "features10n7", "features10n8", "features10n9"]
+        "features": ["features10n1", "features10n2", "features10n3", "features10n4", "features10n5", "features10n6", "features10n7", "features10n8", "features10n9"],
+        "gitHub": "https://github.com/Dev-Omar-Kh/Restaurant-App",
+        "demoLive": "https://restaurant-app-puce-seven.vercel.app/"
     },
 
     {
@@ -105,7 +125,9 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169342/book-store_j0roal.png",
         "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17", "techDataTitle8", "techDataTitle18", "techDataTitle9", "techDataTitle10", "techDataTitle19", "techDataTitle11"],
         "description": "projectDesc12",
-        "features": ["features12n1", "features12n2", "features12n3", "features12n4", "features12n5", "features12n6", "features12n7", "features12n8", "features12n9"]
+        "features": ["features12n1", "features12n2", "features12n3", "features12n4", "features12n5", "features12n6", "features12n7", "features12n8", "features12n9"],
+        "gitHub": "https://github.com/Dev-Omar-Kh/Book-Store",
+        "demoLive": "https://book-store-five-swart.vercel.app/"
     },
 
     {
@@ -114,7 +136,9 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169339/coding-dev-site_rhbd9o.png",
         "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17"],
         "description": "projectDesc13",
-        "features": ["features13n1", "features13n2", "features13n3", "features13n4"]
+        "features": ["features13n1", "features13n2", "features13n3", "features13n4"],
+        "gitHub": "https://github.com/Dev-Omar-Kh/Coding-Developer",
+        "demoLive": "https://coding-developer.vercel.app/"
     },
 
     {
@@ -123,7 +147,9 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169356/products-system_hpil25.png",
         "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17"],
         "description": "projectDesc14",
-        "features": ["features14n1", "features14n2", "features14n3", "features14n4", "features14n5", "features14n6"]
+        "features": ["features14n1", "features14n2", "features14n3", "features14n4", "features14n5", "features14n6"],
+        "gitHub": "https://github.com/Dev-Omar-Kh/Products-System",
+        "demoLive": "https://products-system.vercel.app/"
     },
 
     {
@@ -132,7 +158,9 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169359/sanfour-site_z3hepf.png",
         "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17", "techDataTitle18"],
         "description": "projectDesc15",
-        "features": ["features15n1", "features15n2", "features15n3", "features15n4", "features15n5"]
+        "features": ["features15n1", "features15n2", "features15n3", "features15n4", "features15n5"],
+        "gitHub": "",
+        "demoLive": "https://sanfour.vercel.app/"
     },
 
     {
@@ -141,7 +169,8 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169360/watfa-dashboard_pu16xp.png",
         "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17", "techDataTitle20"],
         "description": "projectDesc16",
-        "features": ["features16n1", "features16n2", "features16n3", "features16n4", "features16n5", "features16n6", "features16n7"]
+        "features": ["features16n1", "features16n2", "features16n3", "features16n4", "features16n5", "features16n6", "features16n7"],
+        "demoLive": "https://watfa-dashboard.vercel.app/"
     },
 
     {
@@ -150,7 +179,8 @@
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169358/watfa-site_txhz4p.png",
         "tool": ["techDataTitle7", "techDataTitle2", "techDataTitle17"],
         "description": "projectDesc17",
-        "features": ["features17n1", "features17n2", "features17n3", "features17n4", "features17n5"]
+        "features": ["features17n1", "features17n2", "features17n3", "features17n4", "features17n5"],
+        "demoLive": "https://watfa-site.vercel.app/"
     }
 
 ]

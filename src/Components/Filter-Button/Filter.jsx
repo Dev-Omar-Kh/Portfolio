@@ -8,8 +8,9 @@ import filterCSS from './filter.module.css';
 import proData from '../../assets/Data/Projects.json';
 import { BiFilterAlt } from 'react-icons/bi';
 import { useTranslation } from 'react-i18next';
+import { PropTypes } from 'prop-types';
 
-export default function Filter() {
+export default function Filter({productsType, setDataFiltered}) {
 
     const {t, i18n} = useTranslation();
 
@@ -34,12 +35,6 @@ export default function Filter() {
 
     }, []);
 
-    // ====== users-type-data ====== //
-
-    // const data = proData
-    const productsType = ["All Projects", ...new Set(proData.flatMap(product => product.tool))];
-
-
     // ====== chose-filters ====== //
 
     const [chosenType, setChosenType] = useState(productsType[0]);
@@ -50,6 +45,13 @@ export default function Filter() {
         setChosenType(chosenStatus);
 
         setDisplayFilteredUsers(false);
+
+        if(chosenStatus !== productsType[0]){
+            setDataFiltered(proData.filter(data => data.tool.includes(chosenStatus)))
+        }
+        else{
+            setDataFiltered(proData);
+        }
 
     }
 
@@ -119,6 +121,7 @@ export default function Filter() {
 
 }
 
-// Filter.propTypes = {
-//     setFilteredDate: PropTypes.func.isRequired,
-// };
+Filter.propTypes = {
+    productsType: PropTypes.array.isRequired,
+    setDataFiltered: PropTypes.func.isRequired,
+};

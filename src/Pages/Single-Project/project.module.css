@@ -173,6 +173,13 @@
 
 }
 
+.hidden_link{
+
+    opacity: 0.5;
+    cursor: not-allowed;
+
+}
+
 .pro_count{
 
     width: 100%;

@@ -13,11 +13,17 @@ export default function Projects() {
 
     const {t, i18n} = useTranslation();
 
-    const [visibleProjects, setVisibleProjects] = useState(8);
+    // ====== display-more-data ====== //
 
+    const [visibleProjects, setVisibleProjects] = useState(8);
     const handleLoadMore = () => {
         setVisibleProjects(prev => prev + 4);
     };
+
+    // ====== filter-projects ====== //
+
+    const [dataFiltered, setDataFiltered] = useState(projectsData);
+    const filter = ["All Projects", ...new Set(projectsData.flatMap(product => product.tool))];
 
     return <React.Fragment>
 
@@ -27,21 +33,21 @@ export default function Projects() {
 
                 <Title title={t('projectsTitle')} />
 
-                <Filter />
+                <Filter productsType={filter} setDataFiltered={setDataFiltered} />
 
             </div>
 
             <div className={projectsCSS.projects_cont}>
 
-                {projectsData.slice().reverse().slice(0, visibleProjects).map(card => <Card key={card.id} data={card} />)}
+                {dataFiltered.slice().reverse().slice(0, visibleProjects).map(card => <Card key={card.id} data={card} />)}
 
             </div>
 
             <div className={projectsCSS.more_btn_cont}>
                 <button
-                    className={visibleProjects >= projectsData.length ? projectsCSS.stop_btn : ''}
+                    className={visibleProjects >= dataFiltered.length ? projectsCSS.stop_btn : ''}
                     onClick={handleLoadMore}
-                    disabled={visibleProjects >= projectsData.length} 
+                    disabled={visibleProjects >= dataFiltered.length} 
                 >
                     {t('displayMoreWord')}
                     <IoMdArrowRoundForward className={i18n.language == 'en' ? projectsCSS.svg_en : projectsCSS.svg_ar} />

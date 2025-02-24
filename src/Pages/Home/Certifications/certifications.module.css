@@ -1,0 +1,69 @@
+.cert_cont{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+
+.more_btn_cont {
+
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.more_btn_cont button {
+
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white-color);
+    font-family: "Inter", serif;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--dark-gray-color);
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+
+        color: var(--black-color);
+        background-color: var(--light-green-color);
+
+    }
+
+    &:hover svg {
+
+        rotate: 90deg;
+
+    }
+
+}
+
+.svg_en,
+.svg_ar {
+
+    font-size: 1.5rem;
+    transition: 0.3s;
+
+}
+
+.svg_ar {
+
+    rotate: 180deg;
+
+}
+
+.stop_btn {
+
+    opacity: 0.25;
+    pointer-events: none;
+
+}

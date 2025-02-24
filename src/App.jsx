@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import SiteLayout from './Layouts/SiteLayout';
 import { useTranslation } from 'react-i18next';
 import Home from './Pages/Home/Home';
-import Project from './Components/Single-Project/Project';
+import Project from './Pages/Single-Project/Project';
 
 const routes = createBrowserRouter([
 

@@ -50,7 +50,7 @@
     "techDataTitle19": "JWT",
     "techDataTitle20": "Chart Js",
 
-    "projectsTitle": "My Projects",
+    "projectsTitle": "Projects",
 
     "projectName1": "Portfolio",
     "projectName2": "Gallery",
@@ -212,6 +212,20 @@
     "features17n2": "Direct download links for different platforms.",
     "features17n3": "Modern and responsive design for all devices.",
     "features17n4": "Smooth and engaging animations using Framer Motion.",
-    "features17n5": "Simple and user-friendly interface for a seamless experience."
+    "features17n5": "Simple and user-friendly interface for a seamless experience.",
+
+    "certificationsWord": "Certifications",
+
+    "certName1": "Sololearn-HTML",
+    "certName2": "Sololearn-CSS",
+    "certName3": "Sololearn-Java Script",
+    "certName4": "Bravo Course",
+    "certName5": "Bravo Training",
+    "certName6": "ALX-AICE",
+    "certName7": "DEPI Technical Training",
+    "certName8": "DEPI Business Training",
+    "certName9": "DevFest Hackathon",
+    "certName10": "G-Camp Organization",
+    "certName11": "Be Faazzlook Initiative"
 
 }
