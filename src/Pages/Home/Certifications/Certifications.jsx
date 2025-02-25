@@ -20,7 +20,7 @@ export default function Certifications() {
 
     return <React.Fragment>
 
-        <section className={`parents_cont comm_container`}>
+        <section id='certs' className={`parents_cont comm_container`}>
 
             <Title title={t('certificationsWord')} />
 

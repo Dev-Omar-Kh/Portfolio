@@ -59,13 +59,13 @@
 
 .right_position{
 
-    right: 0;
+    left: 0;
 
 }
 
 .left_position{
 
-    left: 0;
+    right: 0;
 
 }
 
@@ -98,7 +98,17 @@
 
 /* ====== responsive-style ====== */
 
-@media(max-width: 900px){
+@media only screen and (max-width: 1180px){
+
+    .p_lang{
+
+        display: none;
+
+    }
+
+}
+
+@media only screen and (max-width: 900px){
 
     .rotate_positive_ph{
 

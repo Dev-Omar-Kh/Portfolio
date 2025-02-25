@@ -52,7 +52,7 @@ export default function Main() {
 
     return <React.Fragment>
 
-        <section className={`parents_cont comm_container`}>
+        <section id='about' className={`parents_cont comm_container`}>
 
             <div className={mainCSS.title_cont}>
 

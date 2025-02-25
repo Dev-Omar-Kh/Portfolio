@@ -1,17 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoExpand } from 'react-icons/io5';
 
 import cardCSS from './card.module.css';
 import { PropTypes } from 'prop-types';
+import CertImg from '../cert-img/CertImg';
+import { AnimatePresence } from 'framer-motion';
 
 export default function Card({data}) {
 
     const {t} = useTranslation();
 
+    // ====== view-certification-full-screen ====== //
+
+    const [displayFullView, setDisplayFullView] = useState(false);
+
+    const handleDisplayFullView = () => {
+
+        setDisplayFullView(true);
+
+    }
+
     return <React.Fragment>
 
-        <div className={cardCSS.card}>
+        <AnimatePresence>
+            {displayFullView && <CertImg setDisplayFullView={setDisplayFullView} imgSrc={data.img} />}
+        </AnimatePresence>
+
+        <div onClick={handleDisplayFullView} className={cardCSS.card}>
 
             <img src={data.img} alt={data.name} />
 

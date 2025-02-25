@@ -134,6 +134,7 @@
     color: var(--white-color);
     border-radius: 10px;;
     transition: 0.3s;
+    cursor: pointer;
 
     &:hover{
 
@@ -245,7 +246,7 @@
 
 /* ====== responsive-style ====== */
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 1095px){
 
     .burger_cont{
 

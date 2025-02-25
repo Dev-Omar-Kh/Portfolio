@@ -65,7 +65,7 @@ export default function TrBtn() {
 
             <button onClick={toggleLangsList} className={`${trBtnCSS.tr_btn}`}>
                 <IoIosGlobe />
-                <p>{t('languageWord')}</p>
+                <p className={trBtnCSS.p_lang}>{t('languageWord')}</p>
                 {i18n.language === 'en' ? 
                     <IoIosArrowForward 
                         className={`

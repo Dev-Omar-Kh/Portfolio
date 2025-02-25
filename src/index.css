@@ -24,6 +24,8 @@
     --vanilla-color: #D9DF99;
     --white-color: #FBFCFD;
 
+    --black-color-opacity-1: rgba(8, 11, 16, 0.85);
+
 }
 
 html[lang="ar"] *,

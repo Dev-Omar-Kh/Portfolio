@@ -129,7 +129,7 @@ export default function Technical() {
 
     return <React.Fragment>
 
-        <section className={`parents_cont comm_container`}>
+        <section id='tech' className={`parents_cont comm_container`}>
 
             <Title title={t('techTitle')} />
 

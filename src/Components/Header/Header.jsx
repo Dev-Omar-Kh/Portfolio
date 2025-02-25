@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Link as ScrollLink, scroller } from "react-scroll";
 
 import headerCSS from './header.module.css';
 
 import logoImg from '../../assets/Images/logo.png';
-import { BiCategory, BiHeadphone, BiHomeAlt, BiInfoCircle } from 'react-icons/bi';
+import { BiCategory, BiHeadphone, BiInfoCircle } from 'react-icons/bi';
 import TrBtn from '../Translation-Button/TrBtn';
 import { useTranslation } from 'react-i18next';
 import { IoIosArrowBack, IoIosArrowForward, IoIosGlobe } from 'react-icons/io';
 import { motion, AnimatePresence } from 'framer-motion';
 import Animations from '../../Animations/Animations';
 import Flag from 'react-world-flags';
+import { VscTools } from 'react-icons/vsc';
+import { LiaCertificateSolid } from 'react-icons/lia';
 
 export default function Header() {
 
@@ -42,6 +45,33 @@ export default function Header() {
 
     };
 
+    // ====== auto-active-link ====== //
+
+    const location = useLocation();
+    const [activeSection, setActiveSection] = useState(localStorage.getItem("activeSection") || "about");
+
+    useEffect(() => {
+
+        const savedSection = localStorage.getItem("activeSection") || "about";
+        setActiveSection(savedSection);
+
+        setTimeout(() => {
+
+            scroller.scrollTo(savedSection, {
+                duration: 0,
+                smooth: false,
+                offset: -300,
+            });
+
+        }, 100);
+
+    }, [location.pathname]);
+
+    const handleSetActive = (to) => {
+        setActiveSection(to);
+        localStorage.setItem("activeSection", to);
+    };
+
     return <React.Fragment>
 
         <header className={headerCSS.container}>
@@ -61,31 +91,59 @@ export default function Header() {
                 <ul>
 
                     <li>
-                        <NavLink to={'/'} className={'nav_link'}>
-                            <BiHomeAlt />
-                            {t('homeWord')}
-                        </NavLink>
-                    </li>
-
-                    <li>
-                        <NavLink to={'/about'} className={'nav_link'}>
+                        <ScrollLink 
+                            to="about" spy={true} smooth={true} duration={300} 
+                            offset={-300} onSetActive={handleSetActive}
+                            onClick={hideNavBar} 
+                            className={activeSection === "about" ? 'nav_link active' : 'nav_link'}
+                        >
                             <BiInfoCircle />
                             {t('aboutWord')}
-                        </NavLink>
+                        </ScrollLink>
                     </li>
 
                     <li>
-                        <NavLink to={'work'} className={'nav_link'}>
+                        <ScrollLink 
+                            to="tech" spy={true} smooth={true} duration={300} 
+                            offset={-300} onSetActive={handleSetActive}
+                            onClick={hideNavBar} className={'nav_link'}
+                        >
+                            <VscTools />
+                            {t('techWord')}
+                        </ScrollLink>
+                    </li>
+
+                    <li>
+                        <ScrollLink 
+                            to="projects" spy={true} smooth={true} duration={300} 
+                            offset={-300} onSetActive={handleSetActive}
+                            onClick={hideNavBar} className={'nav_link'}
+                        >
                             <BiCategory />
                             {t('workWord')}
-                        </NavLink>
+                        </ScrollLink>
                     </li>
 
                     <li>
-                        <NavLink to={'contact'} className={'nav_link'}>
+                        <ScrollLink 
+                            to="certs" spy={true} smooth={true} duration={300} 
+                            offset={-300} onSetActive={handleSetActive}
+                            onClick={hideNavBar} className={'nav_link'}
+                        >
+                            <LiaCertificateSolid />
+                            {t('certificationsWord')}
+                        </ScrollLink>
+                    </li>
+
+                    <li>
+                        <ScrollLink 
+                            to="contact" spy={true} smooth={true} duration={300} 
+                            offset={-300} onSetActive={handleSetActive}
+                            onClick={hideNavBar} className={'nav_link'}
+                        >
                             <BiHeadphone />
                             {t('contactWord')}
-                        </NavLink>
+                        </ScrollLink>
                     </li>
 
                     <li className={headerCSS.language_on_nave}>

@@ -27,7 +27,7 @@ export default function Projects() {
 
     return <React.Fragment>
 
-        <section className={`parents_cont comm_container`}>
+        <section id='projects' className={`parents_cont comm_container`}>
 
             <div className={projectsCSS.title_cont}>
 
