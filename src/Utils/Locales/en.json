@@ -53,6 +53,8 @@
 
     "projectsTitle": "Projects",
 
+    "allProjectsWord": "All Projects",
+
     "projectName1": "Portfolio",
     "projectName2": "Gallery",
     "projectName3": "CRUDS System",
@@ -227,6 +229,37 @@
     "certName8": "DEPI Business Training",
     "certName9": "DevFest Hackathon",
     "certName10": "G-Camp Organization",
-    "certName11": "Be Faazzlook Initiative"
+    "certName11": "Be Faazzlook Initiative",
+
+    "contactMeWord": "Contact Me",
+
+    "formTitle": "Get in Touch",
+    "formSlogan": "Have something to discuss? Send me a message and let's talk.",
+
+    "namePlaceHolder": "Enter your name",
+    "emailPlaceHolder": "Enter your email",
+    "msgPlaceHolder": "Enter your message",
+
+    "sendWord": "Send",
+
+    "socialTitle": "Connect With Me",
+    "socialSlogan": "You can contact me through the following accounts",
+
+    "socialLinkTitle1": "LinkedIn",
+    "socialLinkTitle2": "Whatsapp",
+    "socialLinkTitle3": "Facebook",
+    "socialLinkTitle4": "Gmail",
+
+    "formMsgSuccess": "Message sent successfully",
+    "formMsgError": "An error occurred while sending",
+
+    "nameErrorLength": "The name must be between 3 and 30 characters only",
+    "nameErrorEmpty": "Name is required",
+
+    "emailErrorInvalid": "Invalid email address",
+    "emailErrorEmpty": "Email is required",
+
+    "msgErrorLength": "The message must be at least 10 characters long",
+    "msgErrorEmpty": "A message is required"
 
 }

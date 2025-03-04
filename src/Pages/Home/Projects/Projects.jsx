@@ -7,7 +7,9 @@ import Filter from '../../../Components/Filter-Button/Filter';
 import Card from '../../../Components/Card/Card';
 
 import projectsData from '../../../assets/Data/Projects.json';
-import { IoMdArrowRoundForward } from 'react-icons/io';
+import { IoIosArrowForward } from 'react-icons/io';
+import { AnimatePresence, motion } from 'framer-motion';
+import Animations from '../../../Animations/Animations';
 
 export default function Projects() {
 
@@ -16,6 +18,7 @@ export default function Projects() {
     // ====== display-more-data ====== //
 
     const [visibleProjects, setVisibleProjects] = useState(8);
+    // const startDelayIndex = visibleProjects - 4;
     const handleLoadMore = () => {
         setVisibleProjects(prev => prev + 4);
     };
@@ -23,38 +26,57 @@ export default function Projects() {
     // ====== filter-projects ====== //
 
     const [dataFiltered, setDataFiltered] = useState(projectsData);
-    const filter = ["All Projects", ...new Set(projectsData.flatMap(product => product.tool))];
+    const filter = ["allProjectsWord", ...new Set(projectsData.flatMap(product => product.tool))];
 
     return <React.Fragment>
 
-        <section id='projects' className={`parents_cont comm_container`}>
+        <motion.section 
+            id='projects' className={`parents_cont comm_container`}
+            variants={Animations.parentVariants}
+            initial="hidden" whileInView="visible"
+            viewport={{ once: true, amount: 0.05 }}
+        >
 
             <div className={projectsCSS.title_cont}>
 
-                <Title title={t('projectsTitle')} />
+                <motion.div variants={Animations.toLeftVariants}>
+                    <Title title={t('projectsTitle')} />
+                </motion.div>
 
-                <Filter productsType={filter} setDataFiltered={setDataFiltered} />
-
-            </div>
-
-            <div className={projectsCSS.projects_cont}>
-
-                {dataFiltered.slice().reverse().slice(0, visibleProjects).map(card => <Card key={card.id} data={card} />)}
+                <motion.div variants={Animations.toTopVariants}>
+                    <Filter productsType={filter} setDataFiltered={setDataFiltered} />
+                </motion.div>
 
             </div>
+
+            <motion.div variants={Animations.parentNoStaggerVariants} className={projectsCSS.projects_cont}>
+
+                <AnimatePresence>
+                    {dataFiltered.slice(0, visibleProjects).map((card, idx) => (
+                        <motion.div 
+                            variants={Animations.toTopVariants} 
+                            custom={idx} initial='hidden' animate='visible' layout
+                            className={projectsCSS.pro_card} key={idx}
+                        >
+                            <Card data={card} />
+                        </motion.div>
+                    ))}
+                </AnimatePresence>
+
+            </motion.div>
 
             <div className={projectsCSS.more_btn_cont}>
-                <button
+                <motion.button
                     className={visibleProjects >= dataFiltered.length ? projectsCSS.stop_btn : ''}
                     onClick={handleLoadMore}
                     disabled={visibleProjects >= dataFiltered.length} 
                 >
                     {t('displayMoreWord')}
-                    <IoMdArrowRoundForward className={i18n.language == 'en' ? projectsCSS.svg_en : projectsCSS.svg_ar} />
-                </button>
+                    <IoIosArrowForward className={i18n.language == 'en' ? projectsCSS.svg_en : projectsCSS.svg_ar} />
+                </motion.button>
             </div>
 
-        </section>
+        </motion.section>
 
     </React.Fragment>
 

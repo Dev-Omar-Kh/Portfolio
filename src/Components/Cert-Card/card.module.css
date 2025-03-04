@@ -1,6 +1,6 @@
 .card{
 
-    width: calc((100% / 4) - (15px - (15px / 4)));
+    width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -66,33 +66,7 @@
 
 /* ====== responsive-style ====== */
 
-@media only screen and (max-width: 1100px) {
-
-    .card {
-
-        width: calc((100% / 3) - (15px - (15px / 3)));
-
-    }
-
-}
-
-@media only screen and (max-width: 860px) {
-
-    .card {
-
-        width: calc(50% - 7.5px);
-
-    }
-
-}
-
 @media only screen and (max-width: 580px) {
-
-    .card {
-
-        width: 100%;
-
-    }
 
     .card img{
 

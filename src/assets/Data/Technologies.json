@@ -1,0 +1,99 @@
+[
+
+    {
+        "id": 1,
+        "img": "../SVG/html-logo.svg",
+        "title": "techDataTitle1"
+    },
+
+    {
+        "id": 2,
+        "img": "../SVG/css-logo.svg",
+        "title": "techDataTitle2"
+    },
+
+    {
+        "id": 3,
+        "img": "../SVG/js-logo.svg",
+        "title": "techDataTitle3"
+    },
+
+    {
+        "id": 4,
+        "img": "../SVG/jquery-logo.svg",
+        "title": "techDataTitle4"
+    },
+
+    {
+        "id": 5,
+        "img": "../SVG/bootstrap-logo.svg",
+        "title": "techDataTitle5"
+    },
+
+    {
+        "id": 6,
+        "img": "../SVG/tailwindcss-logo.svg",
+        "title": "techDataTitle6"
+    },
+
+    {
+        "id": 7,
+        "img": "../SVG/react-logo.svg",
+        "title": "techDataTitle7"
+    },
+
+    {
+        "id": 8,
+        "img": "../SVG/redux-logo.svg",
+        "title": "techDataTitle8"
+    },
+
+    {
+        "id": 9,
+        "img": "../SVG/node-js-logo.svg",
+        "title": "techDataTitle9"
+    },
+
+    {
+        "id": 10,
+        "img": "../SVG/expressjs-logo.svg",
+        "title": "techDataTitle10"
+    },
+
+    {
+        "id": 11,
+        "img": "../SVG/mongodb-logo.svg",
+        "title": "techDataTitle11"
+    },
+
+    {
+        "id": 12,
+        "img": "../SVG/vscode-logo.svg",
+        "title": "techDataTitle12"
+    },
+
+    {
+        "id": 13,
+        "img": "../SVG/git-logo.svg",
+        "title": "techDataTitle13"
+    },
+
+    {
+        "id": 14,
+        "img": "../SVG/github-logo.svg",
+        "title": "techDataTitle14"
+    },
+
+    {
+        "id": 15,
+        "img": "../SVG/vitelogo.svg",
+        "title": "techDataTitle15"
+    },
+
+    {
+        "id": 16,
+        "img": "../SVG/chrome-logo.svg",
+        "title": "techDataTitle16"
+    }
+
+]

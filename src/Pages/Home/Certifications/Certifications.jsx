@@ -5,7 +5,9 @@ import Card from '../../../Components/Cert-Card/Card';
 import certsData from '../../../assets/Data/Certifications.json'
 
 import certCSS from './certifications.module.css';
-import { IoMdArrowRoundForward } from 'react-icons/io';
+import { IoIosArrowForward } from 'react-icons/io';
+import { motion } from 'framer-motion';
+import Animations from '../../../Animations/Animations';
 
 export default function Certifications() {
 
@@ -14,21 +16,37 @@ export default function Certifications() {
     // ====== display-certifications ====== //
 
     const [visibleCerts, setVisibleCerts] = useState(4);
+    // const startDelayIndex = visibleCerts - 4;
     const handleLoadMore = () => {
         setVisibleCerts(prev => prev + 4);
     };
 
     return <React.Fragment>
 
-        <section id='certs' className={`parents_cont comm_container`}>
+        <motion.section 
+            id='certs' className={`parents_cont comm_container`}
+            variants={Animations.parentVariants}
+            initial="hidden" whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+        >
 
-            <Title title={t('certificationsWord')} />
+            <motion.div variants={Animations.toLeftVariants}>
+                <Title title={t('certificationsWord')} />
+            </motion.div>
 
-            <div className={certCSS.cert_cont}>
+            <motion.div variants={Animations.parentNoStaggerVariants} className={certCSS.cert_cont}>
 
-                {certsData.slice(0, visibleCerts).map(data => <Card key={data.id} data={data} />)}
+                {certsData.slice(0, visibleCerts).map((data, idx) => (
+                    <motion.div 
+                        variants={Animations.toTopVariants} 
+                        custom={idx % 4} initial='hidden' animate='visible' layout
+                        className={certCSS.cert_card} key={data.id}
+                    >
+                        <Card data={data} />
+                    </motion.div>
+                ))}
 
-            </div>
+            </motion.div>
 
             <div className={certCSS.more_btn_cont}>
                 <button
@@ -37,11 +55,11 @@ export default function Certifications() {
                     disabled={visibleCerts >= certsData.length} 
                 >
                     {t('displayMoreWord')}
-                    <IoMdArrowRoundForward className={i18n.language == 'en' ? certCSS.svg_en : certCSS.svg_ar} />
+                    <IoIosArrowForward className={i18n.language == 'en' ? certCSS.svg_en : certCSS.svg_ar} />
                 </button>
             </div>
 
-        </section>
+        </motion.section>
 
     </React.Fragment>
 

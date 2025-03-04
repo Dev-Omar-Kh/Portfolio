@@ -3,6 +3,7 @@ import Main from './Main/Main';
 import Technical from './Technical-Skills/Technical';
 import Projects from './Projects/Projects';
 import Certifications from './Certifications/Certifications';
+import Contact from './Contact/Contact';
 
 export default function Home() {
 
@@ -15,6 +16,8 @@ export default function Home() {
         <Projects />
 
         <Certifications />
+
+        <Contact />
 
     </React.Fragment>
 

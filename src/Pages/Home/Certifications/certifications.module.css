@@ -7,6 +7,12 @@
 
 }
 
+.cert_card{
+
+    width: calc((100% / 4) - (15px - (15px / 4)));
+
+}
+
 .more_btn_cont {
 
     width: 100%;
@@ -65,5 +71,47 @@
 
     opacity: 0.25;
     pointer-events: none;
+
+}
+
+/* ====== responsive-style ====== */
+
+@media only screen and (max-width: 1100px) {
+
+    .cert_card {
+
+        width: calc((100% / 3) - (15px - (15px / 3)));
+
+    }
+
+}
+
+@media only screen and (max-width: 860px) {
+
+    .cert_card {
+
+        width: calc(50% - 7.5px);
+
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+
+    .cert_card {
+
+        width: 100%;
+
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    .more_btn_cont button {
+
+        width: 100%;
+
+    }
 
 }

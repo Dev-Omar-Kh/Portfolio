@@ -92,7 +92,7 @@ export default function Header() {
 
                     <li>
                         <ScrollLink 
-                            to="about" spy={true} smooth={true} duration={300} 
+                            to="about" spy={true} smooth={true} 
                             offset={-300} onSetActive={handleSetActive}
                             onClick={hideNavBar} 
                             className={activeSection === "about" ? 'nav_link active' : 'nav_link'}
@@ -104,7 +104,7 @@ export default function Header() {
 
                     <li>
                         <ScrollLink 
-                            to="tech" spy={true} smooth={true} duration={300} 
+                            to="tech" spy={true} smooth={true} 
                             offset={-300} onSetActive={handleSetActive}
                             onClick={hideNavBar} className={'nav_link'}
                         >
@@ -115,7 +115,7 @@ export default function Header() {
 
                     <li>
                         <ScrollLink 
-                            to="projects" spy={true} smooth={true} duration={300} 
+                            to="projects" spy={true} smooth={true} 
                             offset={-300} onSetActive={handleSetActive}
                             onClick={hideNavBar} className={'nav_link'}
                         >
@@ -126,7 +126,7 @@ export default function Header() {
 
                     <li>
                         <ScrollLink 
-                            to="certs" spy={true} smooth={true} duration={300} 
+                            to="certs" spy={true} smooth={true} 
                             offset={-300} onSetActive={handleSetActive}
                             onClick={hideNavBar} className={'nav_link'}
                         >
@@ -137,7 +137,7 @@ export default function Header() {
 
                     <li>
                         <ScrollLink 
-                            to="contact" spy={true} smooth={true} duration={300} 
+                            to="contact" spy={true} smooth={true} 
                             offset={-300} onSetActive={handleSetActive}
                             onClick={hideNavBar} className={'nav_link'}
                         >

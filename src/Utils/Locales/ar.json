@@ -53,6 +53,8 @@
 
     "projectsTitle": "المشاريع",
 
+    "allProjectsWord": "كل المشاريع",
+
     "projectName1": "معرض أعمال",
     "projectName2": "معرض الصور",
     "projectName3": "نظام إدارة بيانات",
@@ -227,6 +229,37 @@
     "certName8": "رواد مصر الرقمية - تدريب بيزنيس",
     "certName9": "هاكاثون - ديف فيست",
     "certName10": "تنظيم - جي كامب",
-    "certName11": "مبادرة كن فزلوك"
+    "certName11": "مبادرة كن فزلوك",
+
+    "contactMeWord": "تواصل معي",
+
+    "formTitle": "اتصل بي",
+    "formSlogan": "هل لديك شيء للمناقشة؟ أرسل لي رسالة ودعنا نتحدث.",
+
+    "namePlaceHolder": "أدخل اسمك",
+    "emailPlaceHolder": "أدخل بريدك الإلكتروني",
+    "msgPlaceHolder": "أدخل رسالتك",
+
+    "sendWord": "إرسال",
+
+    "socialTitle": "ابقَ على اتصال بي",
+    "socialSlogan": "يمكنك التواصل معي من خلال الحسابات التالية",
+
+    "socialLinkTitle1": "لينكد إن",
+    "socialLinkTitle2": "واتساب",
+    "socialLinkTitle3": "فيسبوك",
+    "socialLinkTitle4": "جيميل",
+
+    "formMsgSuccess": "تم إرسال الرسالة بنجاح",
+    "formMsgError": "حدث خطأ أثناء الإرسال",
+
+    "nameErrorLength": "يجب أن يكون الاسم من 3 إلى 30 حرفًا فقط",
+    "nameErrorEmpty": "الاسم مطلوب",
+
+    "emailErrorInvalid": "البريد الإلكتروني غير صالح",
+    "emailErrorEmpty": "البريد الإلكتروني مطلوب",
+
+    "msgErrorLength": "يجب أن تحتوي الرسالة على 10 أحرف على الأقل",
+    "msgErrorEmpty": "يجب إدخال رسالة"
 
 }

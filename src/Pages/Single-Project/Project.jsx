@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import projectsData from '../../assets/Data/Projects.json';
 
@@ -9,12 +9,20 @@ import { BiCodeAlt, BiLayer, BiLogoGithub, BiStar } from 'react-icons/bi';
 import { TbWorldCode } from 'react-icons/tb';
 import { GoDotFill } from 'react-icons/go';
 import Title from '../../Components/Title/Title';
+import { motion } from 'framer-motion';
+import Animations from '../../Animations/Animations';
 
 export default function Project() {
 
     const {id} = useParams();
     const navigate = useNavigate();
     const {t, i18n} = useTranslation();
+
+    // ====== start-top ====== //
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     // ====== go-back ====== //
 
@@ -46,20 +54,25 @@ export default function Project() {
             num: proData?.features.length
         }
 
-    ]
+    ];
 
     return <React.Fragment>
 
-        <section className={projectCSS.container}>
+        <motion.section 
+            className={projectCSS.container}
+            variants={Animations.parentVariants}
+            initial="hidden" whileInView="visible"
+            viewport={{ once: true, amount: 0.05 }}
+        >
 
             <div className={projectCSS.title_cont}>
 
-                <button onClick={handleGoBack} className={projectCSS.back_btn}>
+                <motion.button variants={Animations.toLeftVariants} onClick={handleGoBack} className={projectCSS.back_btn}>
                     <IoMdArrowRoundBack style={i18n.language === 'ar' ? {rotate: '180deg'} : {}} />
                     {t('backWord')}
-                </button>
+                </motion.button>
 
-                <div className={projectCSS.path_cont}>
+                <motion.div variants={Animations.toLeftVariants} className={projectCSS.path_cont}>
 
                     <Link to={'/'}>{t('projectsTitle')}</Link>
 
@@ -67,7 +80,7 @@ export default function Project() {
 
                     <p>{t(proData.name)}</p>
 
-                </div>
+                </motion.div>
 
             </div>
 
@@ -75,7 +88,7 @@ export default function Project() {
 
                 <div className={projectCSS.pro_right_cont}>
 
-                    <div className={projectCSS.about_pro}>
+                    <motion.div variants={Animations.toTopVariants} className={projectCSS.about_pro}>
 
                         <Title title={t(proData.name)} cap={true} />
 
@@ -101,9 +114,9 @@ export default function Project() {
 
                         </div>
 
-                    </div>
+                    </motion.div>
 
-                    <div className={projectCSS.pro_count}>
+                    <motion.div variants={Animations.toTopVariants} className={projectCSS.pro_count}>
 
                         {countData.map(card => <div key={card.id} className={projectCSS.count_box}>
 
@@ -118,9 +131,9 @@ export default function Project() {
 
                         </div>)}
 
-                    </div>
+                    </motion.div>
 
-                    <div className={projectCSS.pro_tech}>
+                    <motion.div variants={Animations.toTopVariants} className={projectCSS.pro_tech}>
 
                         <div className={projectCSS.tech_title_cont}>
                             <BiCodeAlt />
@@ -133,17 +146,17 @@ export default function Project() {
 
                         </div>
 
-                    </div>
+                    </motion.div>
 
                 </div>
 
                 <div className={projectCSS.pro_left_cont}>
 
-                    <div className={projectCSS.img_cont}>
+                    <motion.div variants={Animations.toTopVariants} className={projectCSS.img_cont}>
                         <img src={proData.img} alt={proData.name} />
-                    </div>
+                    </motion.div>
 
-                    <div className={projectCSS.features_cont}>
+                    <motion.div variants={Animations.toTopVariants} className={projectCSS.features_cont}>
 
                         <div className={projectCSS.tech_title_cont}>
                             <BiStar />
@@ -159,13 +172,13 @@ export default function Project() {
 
                         </ul>
 
-                    </div>
+                    </motion.div>
 
                 </div>
 
             </div>
 
-        </section>
+        </motion.section>
 
     </React.Fragment>
 

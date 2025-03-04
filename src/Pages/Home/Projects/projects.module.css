@@ -18,6 +18,12 @@
 
 }
 
+.pro_card{
+
+    width: calc((100% / 4) - (15px - (15px / 4)));
+
+}
+
 .more_btn_cont{
 
     width: 100%;
@@ -79,6 +85,36 @@
 }
 
 /* ====== responsive-style ====== */
+
+@media only screen and (max-width: 1070px) {
+
+    .pro_card {
+
+        width: calc((100% / 3) - (15px - (15px / 3)));
+
+    }
+
+}
+
+@media only screen and (max-width: 820px) {
+
+    .pro_card {
+
+        width: calc(50% - 7.5px);
+
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+
+    .pro_card {
+
+        width: 100%;
+
+    }
+
+}
 
 @media only screen and (max-width: 425px){
 
