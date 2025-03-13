@@ -260,6 +260,9 @@
     "emailErrorEmpty": "البريد الإلكتروني مطلوب",
 
     "msgErrorLength": "يجب أن تحتوي الرسالة على 10 أحرف على الأقل",
-    "msgErrorEmpty": "يجب إدخال رسالة"
+    "msgErrorEmpty": "يجب إدخال رسالة",
+
+    "footerName": "عمر خالد",
+    "footerMsg": "كل الحقوق محفوظة"
 
 }

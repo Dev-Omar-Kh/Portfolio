@@ -260,6 +260,9 @@
     "emailErrorEmpty": "Email is required",
 
     "msgErrorLength": "The message must be at least 10 characters long",
-    "msgErrorEmpty": "A message is required"
+    "msgErrorEmpty": "A message is required",
+
+    "footerName": "Omar Khaled",
+    "footerMsg": "All Rights Reserved"
 
 }
