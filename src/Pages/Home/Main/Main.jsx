@@ -8,7 +8,7 @@ import infoData from '../../../assets/Data/MyData.json';
 
 import mainCSS from './main.module.css';
 
-import myImg from '../../../assets/Images/my_img.jpg';
+import myImg from '../../../assets/Images/my_img.webp';
 import { motion } from 'framer-motion';
 import Animations from './../../../Animations/Animations';
 
@@ -85,7 +85,7 @@ export default function Main() {
             <div className={mainCSS.my_info}>
 
                 <motion.div variants={Animations.toRightVariants} className={mainCSS.my_img}>
-                    <img src={myImg} alt="Omar Khaled PFP" />
+                    <img loading="eager" fetchPriority="high" src={myImg} alt="Omar Khaled PFP" />
                 </motion.div>
 
                 <div className={mainCSS.my_data}>
