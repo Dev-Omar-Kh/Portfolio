@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    font-family: "Inter", serif;
     border: none;
     border-radius: 10px;;
     cursor: pointer;
@@ -28,6 +29,7 @@
 .tr_btn p{
 
     font-size: 1rem;
+    font-weight: 500;
 
 }
 
@@ -76,6 +78,7 @@
     align-items: center;
     gap: 10px;
     font-size: 1rem;
+    font-weight: 500;
     color: var(--white-color);
     border-radius: 10px;;
     cursor: pointer;
