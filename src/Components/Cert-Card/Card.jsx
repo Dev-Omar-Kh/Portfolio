@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoExpand } from 'react-icons/io5';
+import { motion } from 'framer-motion';
+import Animations from '../../Animations/Animations';
 
 import cardCSS from './card.module.css';
 import { PropTypes } from 'prop-types';
@@ -16,9 +18,7 @@ export default function Card({data}) {
     const [displayFullView, setDisplayFullView] = useState(false);
 
     const handleDisplayFullView = () => {
-
         setDisplayFullView(true);
-
     }
 
     return <React.Fragment>
@@ -27,21 +27,32 @@ export default function Card({data}) {
             {displayFullView && <CertImg setDisplayFullView={setDisplayFullView} imgSrc={data.img} />}
         </AnimatePresence>
 
-        <div onClick={handleDisplayFullView} className={cardCSS.card}>
+        <motion.div 
+            onClick={handleDisplayFullView} 
+            className={cardCSS.card}
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.2 }}
+            variants={Animations.parentNoStaggerVariants} initial='hidden' animate='visible' exit={'exit'}
+        >
 
-            <img src={data.img} alt={data.name} />
+            <motion.div className={cardCSS.img_cont} variants={Animations.opacityVariants}>
+                <motion.img src={data.img} alt={data.name} loading='lazy'/>
+            </motion.div>
 
-            <div className={cardCSS.content}>
+            <motion.div 
+                className={cardCSS.content}
+                variants={Animations.opacityVariants}
+            >
 
                 <h3>{t(data.name)}</h3>
 
-                <button className={cardCSS.pro_link}>
+                <motion.button className={cardCSS.pro_link}>
                     <IoExpand />
-                </button>
+                </motion.button>
 
-            </div>
+            </motion.div>
 
-        </div>
+        </motion.div>
 
     </React.Fragment>
 

@@ -34,7 +34,7 @@ export default function Projects() {
             id='projects' className={`parents_cont comm_container`}
             variants={Animations.parentVariants}
             initial="hidden" whileInView="visible"
-            viewport={{ once: true, amount: 0.05 }}
+            viewport={{ once: true, amount: window.innerWidth <= 768 ? 0.1 : 0.3 }}
         >
 
             <div className={projectsCSS.title_cont}>
@@ -43,7 +43,7 @@ export default function Projects() {
                     <Title title={t('projectsTitle')} />
                 </motion.div>
 
-                <motion.div variants={Animations.toTopVariants}>
+                <motion.div className={projectsCSS.filter_cont} variants={Animations.toTopVariants}>
                     <Filter productsType={filter} setDataFiltered={setDataFiltered} />
                 </motion.div>
 
@@ -54,9 +54,10 @@ export default function Projects() {
                 <AnimatePresence>
                     {dataFiltered.slice(0, visibleProjects).map((card, idx) => (
                         <motion.div 
-                            variants={Animations.toTopVariants} 
+                            variants={Animations.opacityVariants} 
                             custom={idx} initial='hidden' animate='visible' layout
                             className={projectsCSS.pro_card} key={idx}
+                            viewport={{ once: true, amount: window.innerWidth <= 768 ? 0.05 : 0.2 }}
                         >
                             <Card data={card} />
                         </motion.div>

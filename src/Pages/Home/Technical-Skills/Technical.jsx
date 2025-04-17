@@ -21,7 +21,7 @@ export default function Technical() {
             id='tech' className={`parents_cont comm_container`}
             variants={Animations.parentVariants}
             initial="hidden" whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: window.innerWidth <= 768 ? 0.1 : 0.48 }}
         >
 
             <motion.div variants={Animations.toLeftVariants}>

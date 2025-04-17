@@ -148,7 +148,7 @@ export default function Contact() {
             id='contact' className='parents_cont comm_container'
             variants={Animations.parentVariants}
             initial="hidden" whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: window.innerWidth <= 768 ? 0.1 : 0.3 }}
         >
 
             <motion.div variants={Animations.toLeftVariants}>

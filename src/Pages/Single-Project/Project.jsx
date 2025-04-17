@@ -4,7 +4,7 @@ import projectsData from '../../assets/Data/Projects.json';
 
 import projectCSS from './project.module.css';
 import { useTranslation } from 'react-i18next';
-import { IoIosArrowForward, IoMdArrowRoundBack } from 'react-icons/io';
+import { IoMdArrowRoundBack } from 'react-icons/io';
 import { BiCodeAlt, BiLayer, BiLogoGithub, BiStar } from 'react-icons/bi';
 import { TbWorldCode } from 'react-icons/tb';
 import { GoDotFill } from 'react-icons/go';
@@ -61,7 +61,7 @@ export default function Project() {
         <motion.section 
             className={projectCSS.container}
             variants={Animations.parentVariants}
-            initial="hidden" whileInView="visible"
+            initial="hidden" animate="visible"
             viewport={{ once: true, amount: 0.05 }}
         >
 
@@ -76,7 +76,8 @@ export default function Project() {
 
                     <Link to={'/'}>{t('projectsTitle')}</Link>
 
-                    <IoIosArrowForward style={i18n.language === 'ar' ? {rotate: '180deg'} : {}} />
+                    {/* <IoIosArrowForward style={i18n.language === 'ar' ? {rotate: '180deg'} : {}} /> */}
+                    <span>/</span>
 
                     <p>{t(proData.name)}</p>
 

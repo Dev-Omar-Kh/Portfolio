@@ -46,7 +46,7 @@ export default function Main() {
     return <React.Fragment>
 
         <motion.section 
-            id='about' className={`parents_cont comm_container`}
+            id='about' className={`parents_cont comm_container ${mainCSS.custom_cont}`}
             variants={Animations.parentVariants}
             initial="hidden" whileInView="visible"
             viewport={{ once: true, amount: 0 }}

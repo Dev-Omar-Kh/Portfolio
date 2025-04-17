@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { PropTypes } from 'prop-types';
+import { motion } from 'framer-motion';
+import Animations from '../../Animations/Animations';
 
 import cardCSS from './card.module.css';
 import { useTranslation } from 'react-i18next';
@@ -12,37 +14,37 @@ export default function Card({data}) {
 
     return <React.Fragment>
 
-        <Link to={`project/${data.id}`} className={cardCSS.card}>
+        <motion.div
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.2 }}
+            variants={Animations.parentNoStaggerVariants} initial='hidden' animate='visible' exit={'exit'}
+        >
 
-            <div className={cardCSS.img_cont}>
+            <Link to={`project/${data.id}`} className={cardCSS.card}>
 
-                <img src={data.img} alt={data.name} />
+                <motion.img loading='lazy' src={data.img} alt={data.name} variants={Animations.opacityVariants} />
 
-            </div>
+                <motion.div className={cardCSS.content_cont} variants={Animations.opacityVariants}>
 
-            <div className={cardCSS.content_cont}>
+                    <div className={cardCSS.pro_info}>
 
-                <div className={cardCSS.pro_info}>
+                        <h3>{t(data.name)}</h3>
 
-                    <h3>{t(data.name)}</h3>
-
-                    <div className={cardCSS.pro_tools_cont}>
-
-                        {data.tool.map((tool, idx) => <div key={idx} className={cardCSS.tool_box}>
-                            {t(tool)}
-                        </div>)}
+                        <motion.div className={cardCSS.pro_tools_cont} variants={Animations.opacityVariants}>
+                            {data.tool.map((tool, idx) => (<div key={idx} className={cardCSS.tool_box}>{t(tool)}</div>))}
+                        </motion.div>
 
                     </div>
 
-                </div>
+                    <motion.button className={cardCSS.pro_link}>
+                        <FiArrowUpRight style={i18n.language === 'ar' ? {rotate: '-90deg'} : {}} />
+                    </motion.button>
 
-                <button className={cardCSS.pro_link}>
-                    <FiArrowUpRight style={i18n.language === 'ar' ? {rotate: '-90deg'} : {}} />
-                </button>
+                </motion.div>
 
-            </div>
+            </Link>
 
-        </Link>
+        </motion.div>
 
     </React.Fragment>
 

@@ -25,16 +25,15 @@ export default function App() {
 
     useEffect(() => {
 
-        const savedLang = localStorage.getItem('language');
-
-        if(savedLang && i18n.language !== savedLang){
+        const savedLang = localStorage.getItem('language') || 'en';
+        if (i18n.language !== savedLang) {
             i18n.changeLanguage(savedLang);
         }
 
-        document.documentElement.lang = i18n.language;
-        document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
+        document.documentElement.lang = savedLang;
+        document.documentElement.dir = savedLang === 'ar' ? 'rtl' : 'ltr';
 
-    }, [i18n , i18n.language]);
+    }, [i18n, i18n.language]);
 
     return <React.Fragment>
 

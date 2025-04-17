@@ -1,4 +1,8 @@
+.custom_cont{
 
+    margin-top: 30px;
+
+}
 
 .title_cont{
 
@@ -114,7 +118,7 @@
     min-width: calc((100% / 3) -  (25px - (25px / 3)));
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    /* gap: 5px; */
 
 }
 

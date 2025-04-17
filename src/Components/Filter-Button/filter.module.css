@@ -9,7 +9,7 @@
 .time_btn {
 
     height: 100%;
-    min-width: 180px;
+    min-width: 250px;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -19,6 +19,14 @@
     border-radius: 10px;
     background-color: var(--dark-gray-color);
     cursor: pointer;
+
+}
+
+.content_side{
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
 
 }
 
@@ -86,6 +94,19 @@
     flex-direction: column;
     gap: 10px;
     overflow: auto;
+
+    &::-webkit-scrollbar {
+
+        width: 5px;
+        background-color: var(--light-black-color-2);
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+
+        background-color: var(--light-black-color);
+
+    }
 
 }
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Link as ScrollLink, scroller } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 import headerCSS from './header.module.css';
 
@@ -51,20 +51,8 @@ export default function Header() {
     const [activeSection, setActiveSection] = useState(localStorage.getItem("activeSection") || "about");
 
     useEffect(() => {
-
-        const savedSection = localStorage.getItem("activeSection") || "about";
-        setActiveSection(savedSection);
-
-        setTimeout(() => {
-
-            scroller.scrollTo(savedSection, {
-                duration: 0,
-                smooth: false,
-                offset: -300,
-            });
-
-        }, 100);
-
+        setActiveSection("about");
+        window.scrollTo(0, 0);
     }, [location.pathname]);
 
     const handleSetActive = (to) => {

@@ -71,11 +71,15 @@ export default function Filter({productsType, setDataFiltered}) {
 
             <button className={filterCSS.time_btn} onClick={() => setDisplayFilteredUsers(!displayFilteredUsers)}>
 
-                <div className={filterCSS.filter_icon}>
-                    <BiFilterAlt />
-                </div>
+                <div className={filterCSS.content_side}>
 
-                <span>{t(chosenType)}</span>
+                    <div className={filterCSS.filter_icon}>
+                        <BiFilterAlt />
+                    </div>
+
+                    <span>{t(chosenType)}</span>
+
+                </div>
 
                 <div 
                     className={filterCSS.arrowList}
