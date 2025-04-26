@@ -81,7 +81,7 @@ export default function Header() {
                     <li>
                         <ScrollLink 
                             to="about" spy={true} smooth={true} 
-                            offset={-300} onSetActive={handleSetActive}
+                            offset={-200} onSetActive={handleSetActive}
                             onClick={hideNavBar} 
                             className={activeSection === "about" ? 'nav_link active' : 'nav_link'}
                         >
@@ -93,7 +93,7 @@ export default function Header() {
                     <li>
                         <ScrollLink 
                             to="tech" spy={true} smooth={true} 
-                            offset={-300} onSetActive={handleSetActive}
+                            offset={-200} onSetActive={handleSetActive}
                             onClick={hideNavBar} className={'nav_link'}
                         >
                             <VscTools />
@@ -104,7 +104,7 @@ export default function Header() {
                     <li>
                         <ScrollLink 
                             to="projects" spy={true} smooth={true} 
-                            offset={-300} onSetActive={handleSetActive}
+                            offset={-200} onSetActive={handleSetActive}
                             onClick={hideNavBar} className={'nav_link'}
                         >
                             <BiCategory />
@@ -115,7 +115,7 @@ export default function Header() {
                     <li>
                         <ScrollLink 
                             to="certs" spy={true} smooth={true} 
-                            offset={-300} onSetActive={handleSetActive}
+                            offset={-200} onSetActive={handleSetActive}
                             onClick={hideNavBar} className={'nav_link'}
                         >
                             <LiaCertificateSolid />
@@ -126,7 +126,7 @@ export default function Header() {
                     <li>
                         <ScrollLink 
                             to="contact" spy={true} smooth={true} 
-                            offset={-300} onSetActive={handleSetActive}
+                            offset={-200} onSetActive={handleSetActive}
                             onClick={hideNavBar} className={'nav_link'}
                         >
                             <BiHeadphone />

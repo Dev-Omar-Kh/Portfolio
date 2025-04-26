@@ -5,12 +5,13 @@ import { BiCategory, BiCloudDownload, BiLogoGithub } from 'react-icons/bi';
 import { FiUsers } from 'react-icons/fi';
 import { VscTools } from 'react-icons/vsc';
 import infoData from '../../../assets/Data/MyData.json';
+import { motion } from 'framer-motion';
+import Animations from './../../../Animations/Animations';
+import Projects from '../../../assets/Data/Projects.json';
 
 import mainCSS from './main.module.css';
 
 import myImg from '../../../assets/Images/my_img.webp';
-import { motion } from 'framer-motion';
-import Animations from './../../../Animations/Animations';
 
 export default function Main() {
 
@@ -31,7 +32,7 @@ export default function Main() {
             id:2,
             icon: <BiCategory />,
             title: t('achieveCardTitle2'),
-            num: 25,
+            num: Projects.length,
         },
 
         {

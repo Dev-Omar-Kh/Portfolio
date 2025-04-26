@@ -72,6 +72,7 @@
     "projectName15": "Sanfour",
     "projectName16": "Watfa Dashboard",
     "projectName17": "Watfa Site",
+    "projectName18": "Fake Store",
 
     "projectDesc1": "Experimental Portfolio This portfolio was designed as a platform to showcase the first projects I built during my journey of learning front-end development. The project aims to test my mastery of the fundamentals and enhance my skills by creating real-world projects that reflect my progress in this field.",
     "projectDesc2": "Gallery Project This project was developed as a JavaScript training exercise, allowing users to select an image from the gallery, which is then displayed in a larger card with additional details. The goal of this project is to enhance my understanding of dynamic interactions and data manipulation using JavaScript.",
@@ -90,6 +91,7 @@
     "projectDesc15": "Sanfour – E-commerce Store. Sanfour is an e-commerce store that allows users to browse and add products to the cart without creating an account, as items are stored locally using Local Storage. The application connects to an API only during the checkout process to complete purchases efficiently. Built with React for a dynamic UI and CSS for a modern, responsive design.",
     "projectDesc16": "Watfa Dashboard – Admin Panel for Watfa App Watfa Dashboard is a comprehensive admin panel that allows management to track orders, view statistics, review vendor documents, and control user accounts efficiently. It also provides tools for monitoring money transfers and receiving user notifications. Built using React for interactivity and CSS for a modern, responsive design.",
     "projectDesc17": "Watfa Site – Informational Website for Watfa App Watfa Site is an informational website that provides details about the Watfa app and offers download links for users. The site features a modern and engaging design, built with React for dynamic interactions, CSS for a sleek and responsive layout, and Framer Motion for smooth animations that enhance user experience.",
+    "projectDesc18": "A simple online store project built with React.js and Redux for state management. The website displays products like cakes and ice cream, allowing users to add items to their shopping cart. When a product is added to the cart, its available quantity decreases in the store and increases in the cart, simulating a real inventory system.",
 
     "displayMoreWord": "Display More",
 
@@ -216,6 +218,13 @@
     "features17n3": "Modern and responsive design for all devices.",
     "features17n4": "Smooth and engaging animations using Framer Motion.",
     "features17n5": "Simple and user-friendly interface for a seamless experience.",
+
+    "features18n1": "Professional state management using Redux to track available and sold quantities dynamically.",
+    "features18n2": "Fully responsive design that works seamlessly across all devices (mobile, tablet, and desktop).",
+    "features18n3": "Elegant and clean UI with a smooth user experience and pleasant color scheme.",
+    "features18n4": "Real-time inventory updates: when a product is added to the cart, the available stock updates instantly without page reloads.",
+    "features18n5": "Cart indicator displaying the number of added items.",
+    "features18n6": "Clean and organized code that is easy to maintain and scale.",
 
     "certificationsWord": "Certifications",
 

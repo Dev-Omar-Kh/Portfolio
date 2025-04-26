@@ -106,6 +106,17 @@
     },
 
     {
+        "id": 18,
+        "name": "projectName18",
+        "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1745684370/Projects/tdcxy9ccgzi4hbrnadus.png",
+        "tool": ["techDataTitle7", "techDataTitle8", "techDataTitle9", "techDataTitle17"],
+        "description": "projectDesc18",
+        "features": ["features18n1", "features18n2", "features18n3", "features18n4", "features18n5", "features18n6"],
+        "gitHub": "https://github.com/Dev-Omar-Kh/Fake-Store",
+        "demoLive": "https://fake-store-eight-xi.vercel.app/"
+    },
+
+    {
         "id": 11,
         "name": "projectName7",
         "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1740169333/advice-app_plmsun.png",
