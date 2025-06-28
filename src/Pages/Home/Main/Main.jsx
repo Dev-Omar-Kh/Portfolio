@@ -4,20 +4,21 @@ import { useTranslation } from 'react-i18next';
 import { BiCategory, BiCloudDownload, BiLogoGithub } from 'react-icons/bi';
 import { FiUsers } from 'react-icons/fi';
 import { VscTools } from 'react-icons/vsc';
-import infoData from '../../../assets/Data/MyData.json';
 import { motion } from 'framer-motion';
 import Animations from './../../../Animations/Animations';
-import Projects from '../../../assets/Data/Projects.json';
+import db from '../../../assets/Data/db.json';
 
 import mainCSS from './main.module.css';
-
-import myImg from '../../../assets/Images/my_img.webp';
 
 export default function Main() {
 
     const {t, i18n} = useTranslation();
 
     // ====== achievement-data ====== //
+
+    const infoData = db.aboutMe.myData;
+    const myImg = db.aboutMe.myImg;
+    const Projects = db.projectsData;
 
     const achievementData = [
 
@@ -64,7 +65,7 @@ export default function Main() {
                     <motion.a 
                         variants={Animations.toTopVariants} 
                         className={mainCSS.git_hub_link} 
-                        href="https://github.com/Dev-Omar-Kh" target='_blank'
+                        href={db.aboutMe.links.gitHubLink} target='_blank'
                     >
                         <BiLogoGithub />
                         <p>{t('gitHubWord')}</p>
@@ -73,7 +74,7 @@ export default function Main() {
                     <motion.a 
                         variants={Animations.toTopVariants} 
                         className={mainCSS.cv_link} 
-                        href="https://drive.google.com/uc?export=download&id=1SAgA-kOxe7Co1jYdOS81SQdKqUDWw8Jc"
+                        href={db.aboutMe.links.cvLink}
                     >
                         <BiCloudDownload />
                         <p>{t('downloadCvWord')}</p>

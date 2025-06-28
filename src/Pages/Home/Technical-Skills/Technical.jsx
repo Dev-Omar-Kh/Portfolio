@@ -1,11 +1,10 @@
 import React from 'react';
 import Title from '../../../Components/Title/Title';
 import { useTranslation } from 'react-i18next';
-import techData from '../../../assets/Data/Technologies.json';
 import { motion } from 'framer-motion';
-
 import techCSS from './technical.module.css';
 import Animations from '../../../Animations/Animations';
+import technoData from '../../../assets/Data/db.json'
 
 export default function Technical() {
 
@@ -13,7 +12,7 @@ export default function Technical() {
 
     // ====== tech-data ====== //
 
-    const imagesSrc = import.meta.glob('../../../assets/SVG/*.svg', { eager: true });
+    const techData = technoData.technicalSkillsData;
 
     return <React.Fragment>
 
@@ -30,21 +29,14 @@ export default function Technical() {
 
             <div className={techCSS.cards_cont}>
 
-                {techData.map(card => {
+                {techData.map(card => <motion.div variants={Animations.toTopVariants} key={card.id} className={techCSS.tech_card}>
 
-                    const imagePath = `../../../assets/SVG/${card.img.split('/').pop()}`;
-                    const imageSrc = imagesSrc[imagePath]?.default || '';
-                    
-                    return(<motion.div variants={Animations.toTopVariants} key={card.id} className={techCSS.tech_card}>
+                    <div className={techCSS.t_img}>
+                        <img src={card.img} alt="techImg1" />
+                    </div>
+                    <p className={techCSS.card_p}>{t(card.title)}</p>
 
-                        <div className={techCSS.t_img}>
-                            <img src={imageSrc} alt="techImg1" />
-                        </div>
-                        <p className={techCSS.card_p}>{t(card.title)}</p>
-
-                    </motion.div>)
-
-                })}
+                </motion.div>)}
 
             </div>
 

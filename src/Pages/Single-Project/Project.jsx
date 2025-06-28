@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import projectsData from '../../assets/Data/Projects.json';
-
-import projectCSS from './project.module.css';
+import db from '../../assets/Data/db.json';
 import { useTranslation } from 'react-i18next';
 import { IoMdArrowRoundBack } from 'react-icons/io';
 import { BiCodeAlt, BiLayer, BiLogoGithub, BiStar } from 'react-icons/bi';
@@ -12,11 +10,15 @@ import Title from '../../Components/Title/Title';
 import { motion } from 'framer-motion';
 import Animations from '../../Animations/Animations';
 
+import projectCSS from './project.module.css';
+
 export default function Project() {
 
     const {id} = useParams();
     const navigate = useNavigate();
     const {t, i18n} = useTranslation();
+
+    const projectsData = db.projectsData
 
     // ====== start-top ====== //
 

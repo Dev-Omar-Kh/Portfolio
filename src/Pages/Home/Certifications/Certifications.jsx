@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Title from '../../../Components/Title/Title';
 import { useTranslation } from 'react-i18next';
 import Card from '../../../Components/Cert-Card/Card';
-import certsData from '../../../assets/Data/Certifications.json'
+// import certsData from '../../../assets/Data/Certifications.json'
+import db from '../../../assets/Data/db.json';
 
 import certCSS from './certifications.module.css';
 import { IoIosArrowForward } from 'react-icons/io';
@@ -12,6 +13,7 @@ import Animations from '../../../Animations/Animations';
 export default function Certifications() {
 
     const {t, i18n} = useTranslation();
+    const certsData = db.certificationsData;
 
     // ====== display-certifications ====== //
 

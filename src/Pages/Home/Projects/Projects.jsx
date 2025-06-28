@@ -5,8 +5,7 @@ import { useTranslation } from 'react-i18next';
 import Title from '../../../Components/Title/Title';
 import Filter from '../../../Components/Filter-Button/Filter';
 import Card from '../../../Components/Card/Card';
-
-import projectsData from '../../../assets/Data/Projects.json';
+import db from '../../../assets/Data/db.json';
 import { IoIosArrowForward } from 'react-icons/io';
 import { AnimatePresence, motion } from 'framer-motion';
 import Animations from '../../../Animations/Animations';
@@ -14,6 +13,8 @@ import Animations from '../../../Animations/Animations';
 export default function Projects() {
 
     const {t, i18n} = useTranslation();
+
+    const projectsData = db.projectsData
 
     // ====== display-more-data ====== //
 
