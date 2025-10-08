@@ -36,20 +36,20 @@
     "techDataTitle4": "Jquery",
     "techDataTitle5": "Bootstrap",
     "techDataTitle6": "Tailwind",
-    "techDataTitle7": "React Js",
+    "techDataTitle7": "React JS",
     "techDataTitle8": "Redux JS",
-    "techDataTitle9": "Node Js",
-    "techDataTitle10": "Express Js",
+    "techDataTitle9": "Node JS",
+    "techDataTitle10": "Express JS",
     "techDataTitle11": "Mongo DB",
     "techDataTitle12": "VS Code",
     "techDataTitle13": "Git",
     "techDataTitle14": "GitHub",
     "techDataTitle15": "Type Script",
-    "techDataTitle16": "Next js",
+    "techDataTitle16": "Next JS",
     "techDataTitle17": "Framer Motion",
     "techDataTitle18": "API",
     "techDataTitle19": "JWT",
-    "techDataTitle20": "Chart Js",
+    "techDataTitle20": "Chart JS",
 
     "projectsTitle": "Projects",
 
@@ -74,6 +74,8 @@
     "projectName17": "Watfa Site",
     "projectName18": "Fake Store",
     "projectName19": "Art Hub Dashboard",
+    "projectName20": "NSAC Admin Panel",
+    "projectName21": "NSAC Website",
 
     "projectDesc1": "Experimental Portfolio This portfolio was designed as a platform to showcase the first projects I built during my journey of learning front-end development. The project aims to test my mastery of the fundamentals and enhance my skills by creating real-world projects that reflect my progress in this field.",
     "projectDesc2": "Gallery Project This project was developed as a JavaScript training exercise, allowing users to select an image from the gallery, which is then displayed in a larger card with additional details. The goal of this project is to enhance my understanding of dynamic interactions and data manipulation using JavaScript.",
@@ -94,6 +96,8 @@
     "projectDesc17": "Watfa Site – Informational Website for Watfa App Watfa Site is an informational website that provides details about the Watfa app and offers download links for users. The site features a modern and engaging design, built with React for dynamic interactions, CSS for a sleek and responsive layout, and Framer Motion for smooth animations that enhance user experience.",
     "projectDesc18": "A simple online store project built with React.js and Redux for state management. The website displays products like cakes and ice cream, allowing users to add items to their shopping cart. When a product is added to the cart, its available quantity decreases in the store and increases in the cart, simulating a real inventory system.",
     "projectDesc19": "ArtHub Admin Dashboard - A responsive and feature-rich admin dashboard built with React.js and Tailwind CSS for managing ArtHub’s mobile app operations. It includes sales and order analytics with Chart.js, live order tracking, a user complaint system, and role-based access control. Data fetching is optimized with React Query and Axios, providing real-time insights and efficient management of users, orders, and reports.",
+    "projectDesc20": "NASA Space Apps Cairo Admin Dashboard An advanced admin dashboard built with Next.js and Tailwind CSS for managing the NASA Space Apps Cairo bootcamp and hackathon operations. It handles participant registrations, form management, and material distribution through QR code scanning. The system also includes a built-in email module for sending custom templates to members and dynamic charts displaying key statistics for each section.",
+    "projectDesc21": "NASA Space Apps Cairo Website A modern website built with React.js and Tailwind CSS for the NASA Space Apps Cairo community. It showcases data from previous years, provides detailed information about the current hackathon and bootcamp, and includes registration forms for participants. The platform offers a smooth user experience with fast data loading and responsive design.",
 
     "displayMoreWord": "Display More",
 
@@ -235,6 +239,18 @@
     "features19n5": "Data Reporting & Statistics: Tools for generating reports and monitoring business metrics.",
     "features19n6": "Smooth UI Animations: Enhanced user experience with Framer Motion transitions.",
     "features19n7": "Optimized Data Fetching: Efficient and cached API communication using React Query and Axios.",
+
+    "features20n1": "Participant registration and management system",
+    "features20n2": "Form management for bootcamp and hackathon events",
+    "features20n3": "Material distribution via QR code scanning",
+    "features20n4": "Built-in email system with customizable templates",
+    "features20n5": "Dynamic charts displaying key statistics for each section",
+
+    "features21n1": "Display of previous years’ hackathon and bootcamp data",
+    "features21n2": "Detailed information about current season events",
+    "features21n3": "Online registration forms for participants",
+    "features21n4": "Fast and responsive user interface with React.js and Tailwind CSS",
+    "features21n5": "Smooth user experience with fast data loading and responsive design",
 
     "certificationsWord": "Certifications",
 

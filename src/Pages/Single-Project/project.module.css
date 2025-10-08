@@ -355,18 +355,20 @@
 }
 
 .features_list li{
-
     padding: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
     border-radius: 10px;
     background-color: var(--dark-gray-color);
-
 }
 
 .features_list li svg{
 
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     font-size: 1.25em;
     color: var(--light-green-color);
 

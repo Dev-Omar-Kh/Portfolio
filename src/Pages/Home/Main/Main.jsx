@@ -26,7 +26,7 @@ export default function Main() {
             id:1,
             icon: <FiUsers />,
             title: t('achieveCardTitle1'),
-            num: 8,
+            num: db.aboutMe.achievementData[0].content,
         },
 
         {
@@ -40,7 +40,7 @@ export default function Main() {
             id:3,
             icon: <VscTools />,
             title: t('achieveCardTitle3'),
-            num: 2,
+            num: db.aboutMe.achievementData[2].content,
         },
 
     ];
