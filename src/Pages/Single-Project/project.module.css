@@ -329,17 +329,21 @@
     width: 100%;
     padding: 10px;
     border-radius: 10px;
-    background-color: var(--dark-gray-color);
+    background-color: var(--light-black-color);
+
+}
+
+.small_img{
+
+    display: none;
 
 }
 
 .img_cont img{
-
     width: 100%;
     height: fit-content;
     border-radius: 10px;
     pointer-events: none;
-
 }
 
 .features_list{
@@ -394,6 +398,18 @@
     .pro_right_cont, .pro_left_cont{
 
         width: 100%;
+
+    }
+
+    .small_img{
+
+        display: block;
+
+    }
+
+    .large_img{
+
+        display: none;
 
     }
 

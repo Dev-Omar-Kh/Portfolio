@@ -91,6 +91,10 @@ export default function Project() {
 
                 <div className={projectCSS.pro_right_cont}>
 
+                    <motion.div variants={Animations.toTopVariants} className={`${projectCSS.img_cont} ${projectCSS.small_img}`}>
+                        <img src={proData.img} alt={proData.name} />
+                    </motion.div>
+
                     <motion.div variants={Animations.toTopVariants} className={projectCSS.about_pro}>
 
                         <Title title={t(proData.name)} cap={true} />
@@ -155,7 +159,7 @@ export default function Project() {
 
                 <div className={projectCSS.pro_left_cont}>
 
-                    <motion.div variants={Animations.toTopVariants} className={projectCSS.img_cont}>
+                    <motion.div variants={Animations.toTopVariants} className={`${projectCSS.img_cont} ${projectCSS.large_img}`}>
                         <img src={proData.img} alt={proData.name} />
                     </motion.div>
 

@@ -27,7 +27,7 @@
             "cvLink": "https://drive.google.com/uc?export=download&id=1SAgA-kOxe7Co1jYdOS81SQdKqUDWw8Jc"
         },
 
-        "myImg": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1747489510/my_img_illdti.jpg"
+        "myImg": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1759895083/WhatsApp_Image_2025-10-08_at_06.44.18_09b4afdf_vumfzz.jpg"
 
     },
 
@@ -132,6 +132,16 @@
     ],
 
     "projectsData": [
+
+        {
+            "id": 19,
+            "name": "projectName19",
+            "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1759896364/art-hub-dashboard_bltf8g.png",
+            "tool": ["techDataTitle7", "techDataTitle6", "techDataTitle20", "techDataTitle17", "techDataTitle18", "techDataTitle19"],
+            "description": "projectDesc19",
+            "features": ["features19n1", "features19n2", "features19n3", "features19n4", "features19n5", "features19n6", "features19n7"],
+            "demoLive": "https://art-hub-dashboard.vercel.app/"
+        },
 
         {
             "id": 1,
@@ -329,6 +339,18 @@
     ],
 
     "certificationsData": [
+
+        {
+            "id": 13,
+            "name": "certName13",
+            "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1759900115/robusta_jfdnld.png"
+        },
+
+        {
+            "id": 12,
+            "name": "certName12",
+            "img": "https://res.cloudinary.com/dh6zttcrq/image/upload/v1759899218/Core-Team_vaod2c.png"
+        },
 
         {
             "id": 1,
